@@ -9,7 +9,7 @@ export default defineConfig({
     icon(),
     i18n({
       defaultLocale: "en",
-      locales: ["fr", "en"],
+      locales: ["de", "en", "al","gr"],
       client: {
         data: true,
         paths: true,
@@ -17,7 +17,9 @@ export default defineConfig({
       // used to localize the routes
       pages: {
 				"/about": {
-					fr: "/a-propos",
+					 de: "/uber-uns",
+           al: "/rreth-nesh",
+           gr: "/sxetika-me-emas",
 				}
 			},
     }),
@@ -27,7 +29,9 @@ export default defineConfig({
         locales: {
           // key/value pairs of all languages supported
           en: 'en-US', // The `defaultLocale` value must be present in `locales` keys
-          fr: 'fr-FR',
+          de: 'de-DE',
+          al: 'sq-AL',
+          gr: 'el-GR',
         },
       },
     }),
