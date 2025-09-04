@@ -2,7 +2,7 @@
 import BaseLayout from "@layouts/BaseLayout.astro";
 import CTA from "@components/CTA.astro";
 import Landing from "@components/Landing.astro";
-import { t } from "i18n:astro";
+import {t } from "i18n:astro";
 
 // Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Landing (for rendering)
 import {getOptimizedImage} from "@utils/utils"
@@ -20,9 +20,9 @@ const optimizedImage = await getOptimizedImage(landingImage)
   <!-- ============================================ -->
 
   <Landing 
-    title={t("about-page.landing")} 
+    title={t("services:seo.landing")} 
     image={optimizedImage}
-    url="/about"
+    url="/seo"
   />
 
   <!-- ============================================ -->

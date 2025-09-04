@@ -1,0 +1,130 @@
+{   
+    "static": {
+        "landing": "Static Websites Business",
+        "topper": "Services",
+        "title": "Static Websites Business",
+        "p": "We create fast, secure, and reliable static websites tailored to your business needs. Static sites are lightweight, load almost instantly, and are less vulnerable to security threats — perfect for showcasing your products or services, improving user experience, and maintaining a strong online presence. Our designs are responsive, modern, and built to convert visitors into customers.",
+        "l1": "Speed: Instant load times for better user engagement and SEO.",
+        "l2": "Security: No databases, fewer vulnerabilities.",
+        "l3": "Cost-Effective: Minimal hosting and maintenance costs.",
+        "l4": "Reliability: Stable performance even during high traffic.",
+        "cta": "Inquiry",
+        "steps": {
+            "topper": "Our Process",
+            "title": "How To Get Started",
+            "p": "We follow a clear, step-by-step approach to deliver results efficiently, ensuring you know exactly what to expect at every stage.",
+            "s1": {
+                "title": "Consultation & Planning",
+                "p": "We discuss your goals, target audience, and site requirements."
+            },
+            "s2": {
+                "title": "Design & Approval",
+                "p": "We create a responsive, visually appealing design for your review."
+            },
+            "s3": {
+                "title": "Development & Optimization",
+                "p": "We build the site with clean code, fast loading, and SEO-friendly structure."
+            },
+            "s4": {
+                "title": "Launch & Support",
+                "p": "We deploy your site to a secure hosting environment and provide ongoing support if needed."
+            }
+        }
+    },
+    "seo": {
+        "landing": "SEO",
+        "topper": "Services",
+        "title": "Search Engine Optimization (SEO)",
+        "p": "Our SEO services help your business appear higher in search results, attract more qualified visitors, and increase conversions. From keyword research to on-page optimization and link building, we ensure your website is discoverable and competitive.Our SEO services help your business appear higher in search results, attract more qualified visitors, and increase conversions. From keyword research to on-page optimization and link building, we ensure your website is discoverable and competitive.",
+        "l1": "Higher rankings in Google and other search engines.",
+        "l2": "Increased targeted traffic.",
+        "l3": "Improved user experience and site structure.",
+        "l4": "Long-term organic growth.",
+        "cta": "Inquiry",
+        "steps": {
+            "topper": "Our Process",
+            "title": "How To Get Started",
+            "p": "We optimize your website for higher rankings, better visibility, and long-term growth.",
+            "s1": {
+                "title": "Audit & Research",
+                "p": "We analyze your current website, competitors, and market to identify opportunities."
+            },
+            "s2": {
+                "title": "Strategy & Keywords",
+                "p": " We create a targeted keyword and content strategy based on your audience."
+            },
+            "s3": {
+                "title": "On-Page & Off-Page Optimization",
+                "p": "We implement SEO best practices, technical fixes, and link-building."
+            },
+            "s4": {
+                "title": "Monitoring & Reporting",
+                "p": "We track results, refine strategies, and send regular progress reports."
+            }
+        }
+    },
+    "googlemb": {
+        "landing": "Google Business Pages Management",
+        "topper": "Services",
+        "title": "Google Business Pages Management",
+        "p": "We optimize and manage your Google Business Profile to increase your visibility in local search results and on Google Maps. Our service includes profile setup, content updates, review management, and insights tracking to attract more customers in your area.",
+        "l1": "More calls, visits, and inquiries from local customers.",
+        "l2": "Better local SEO and map rankings.",
+        "l3": "Consistent and accurate business information.",
+        "l4": "Positive brand perception through review management.",
+        "cta": "Inquiry",
+        "steps": {
+            "topper": "Our Process",
+            "title": "How To Get Started",
+            "p": "We ensure your Google Business Profile attracts and converts local customers.",
+            "s1": {
+                "title": "Setup & Verification",
+                "p": "We create or claim your profile and verify it with Google."
+            },
+            "s2": {
+                "title": "Optimization",
+                "p": "We update business info, photos, services, and keywords for maximum local visibility."
+            },
+            "s3": {
+                "title": "Engagement",
+                "p": "We manage reviews, Q&A, and post updates to keep your profile active."
+            },
+            "s4": {
+                "title": "Performance Tracking",
+                "p": "We monitor insights and adjust for better calls, clicks, and visits."
+            }
+        }
+    },
+    "branding": {
+        "landing": "Branding",
+        "topper": "Services",
+        "title": "Branding",
+        "p": "We craft a unique brand identity that resonates with your audience and sets you apart from competitors. From logo design and brand guidelines to messaging and tone of voice, we create a cohesive and memorable brand experience.",
+        "l1": "Strong brand recognition.",
+        "l2": "Consistent visuals and messaging.",
+        "l3": "Professional image that builds trust.",
+        "l4": "Emotional connection with your audience.",
+        "cta": "Inquiry",
+        "steps": {
+            "topper": "Our Process",
+            "title": "How To Get Started",
+            "p": "We build a unique, consistent identity that connects with your audience.",
+            "s1": {
+                "title": "Discovery & Research",
+                "p": "We learn about your business, audience, and competitors."
+            },
+            "s2": {
+                "title": "Concept Development",
+                "p": "We create brand concepts, mood boards, and initial visuals."
+            },
+            "s3": {
+                "title": "Design & Refinement",
+                "p": "We develop your logo, color palette, typography, and brand elements."
+            },
+            "s4": {
+                "title": "Guidelines & Delivery",
+                "p": "We provide a full brand kit with usage guidelines for consistency."
+            }
+        }
+    }
+}

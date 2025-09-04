@@ -1,9 +1,11 @@
 {
     "home": "Home",
     "about": "About",
-    "projects": "Projects",
-    "project-1": "Project 1",
-    "project-2": "Project 2",
+    "services": "Services",
+    "services-1": "Static Websites Business",
+    "services-2": "SEO",
+    "services-3": "Google Business Pages Management",
+    "services-4": "Branding",
     "blog": "Blog",
     "contact": "Contact",
     "theme-label": "Choose theme",
@@ -31,13 +33,13 @@
     },
     "about-page": {
         "landing": "About",
-        "topper": "About",
-        "title": "About Company Title",
-        "p-1": "Our company was created In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.",
-        "p-2": "We believe that In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.",
-        "p-3": "It's important In consequat tincidunt turpis sit amet imperdiet.",
+        "topper": "About Us",
+        "title": "Doko Studio",
+        "p-1": " We’re more than just a digital agency — we’re the bridge between bold ideas and measurable results. Since day one, our mission has been to help businesses stand out in a noisy world through strategy, design, and technology that actually work. Every project we take on is guided by creativity, precision, and a relentless drive to deliver value.",
+        "p-3": "We don’t just build websites or campaigns — we build momentum. Because a business in motion is a business that wins.",
+        "name": "Dori",
         "rank": "CEO-Founder",
-        "cta": "Our projects"
+        "cta": "Get in Touch"
     },
     "footer": {
         "pages": "Pages",

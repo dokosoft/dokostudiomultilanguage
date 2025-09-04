@@ -20,13 +20,13 @@ const currentYear = getCurrentYear();
                 We’re more than just a digital agency — we’re the bridge between bold ideas and measurable results.
             </p>
             <div class="cs-social">
-                <a class="cs-social-link" aria-label="visit google profile" href="{ client.address.mapLink }" target="_blank" rel="noopener">
+                <a class="cs-social-link" aria-label="visit google profile" href={ client.address.mapLink } target="_blank" rel="noopener">
                     <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/google.svg" alt="google" width="11" height="11">
                 </a>
-                <a class="cs-social-link" aria-label="visit facebook profile" href="{ client.socials.facebook }" target="_blank" rel="noopener">
+                <a class="cs-social-link" aria-label="visit facebook profile" href={ client.socials.facebook } target="_blank" rel="noopener">
                     <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/facebook.svg" alt="facebook" width="6" height="11">
                 </a>
-                <a class="cs-social-link" aria-label="visit instagram profile" href="{ client.socials.instagram }" target="_blank" rel="noopener">
+                <a class="cs-social-link" aria-label="visit instagram profile" href={ client.socials.instagram } target="_blank" rel="noopener">
                     <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/instagram.svg" alt="instagram" width="11" height="11">
                 </a>
             </div>
@@ -49,16 +49,16 @@ const currentYear = getCurrentYear();
                 <span class="cs-header">{t("footer.services")}</span>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/static-websites-business/">Static Websites for Business</a>
+                <a class="cs-nav-link" href={getLocalePath("/static-websites-business/")}>Static Websites for Business</a>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/seo/">SEO</a>
+                <a class="cs-nav-link" href={getLocalePath("/seo/")}>SEO</a>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/google-business-pages-management/">Google Business Pages Management</a>
+                <a class="cs-nav-link" href={getLocalePath("/google-business-pages-management/")}>Google Business Pages Management</a>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/branding/">Branding</a>
+                <a class="cs-nav-link" href={getLocalePath("/branding/")}>Branding</a>
             </li>
         </ul>
         <!-- Contact Info -->
@@ -68,15 +68,15 @@ const currentYear = getCurrentYear();
             </li>
             <li class="cs-nav-li">
                 <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/phone-stroke.svg" alt="phone" width="24" height="24">
-                <a class="cs-nav-link cs-phone" href="tel:{ client.phoneForTel }">{ client.phoneFormatted }</a>
+                <a class="cs-nav-link cs-phone" href={`tel:${client.phoneFormatted}`}>{ client.phoneForTel }</a>
             </li>
             <li class="cs-nav-li">
                 <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/email-stroke.svg" alt="email" width="24" height="24">
-                <a class="cs-nav-link cs-email" href="mailto:{ client.email }">{ client.email }</a>
+                <a class="cs-nav-link cs-email" href={`mailto:${client.email}` }>{ client.email }</a>
             </li>
             <li class="cs-nav-li">
                 <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/pin-stroke.svg" alt="pin" width="24" height="24">
-                <a class="cs-nav-link cs-address" href="{ client.address.mapLink }" target="_blank" rel="noopener">
+                <a class="cs-nav-link cs-address" href={ client.address.mapLink } target="_blank" rel="noopener">
                     { client.address.lineOne }, <br>
                     { client.address.lineTwo },<br>  { client.address.city }, { client.address.state }
                     { client.address.zip }

@@ -10,15 +10,23 @@ const navData = [
     children: []
   },
   {
-    key: "projects",
+    key: "Services",
     children: [
       {
-        key: "project-1",
-        url: "/projects/project-1/"
+        key: "Static Websites Business",
+        url: "/services/static-websites-business/"
       },
       {
-        key: "project-2",
-        url: "/projects/project-2/"
+        key: "SEO",
+        url: "/services/seo/"
+      },
+      {
+        key: "Google Business Pages Management",
+        url: "/services/google-business-pages-management/"
+      },
+      {
+        key: "Branding",
+        url: "/services/branding/"
       }
     ]
   },

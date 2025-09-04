@@ -1,99 +1,138 @@
 ---
 import { Picture } from "astro:assets";
-const { title, image } = Astro.props
+const { title, image, url } = Astro.props
 ---
 
-<section id="int-hero">
-    <h1 id="home-h">{title}</h1>
-
-    <Picture 
-        src={image.src}
-        width={image.attributes.width}
-        height={image.attributes.height}
-        formats={['avif', 'webp']} 
-        aria-hidden="true" 
-        decoding="async"
-        alt=""
-        loading="eager"
-    />
+<section id="banner-310">
+    <div class="cs-container">
+            <span class="cs-int-title">{title}</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href={ url } class="cs-link cs-active">{title}</a>
+            </div>
+        </div>
+    <div class="cs-background">
+        <Picture 
+            src={image.src}
+            width={image.attributes.width}
+            height={image.attributes.height}
+            formats={['avif', 'webp']} 
+            aria-hidden="true" 
+            decoding="async"
+            alt=""
+            loading="eager"
+            
+        />
+    </div>
 </section>
 
 <style lang="less">
-    /* Mobile */
-    @media only screen and (min-width: 0em) {
-        #int-hero {
-            min-height: 30vh;
-            padding-top: (50/16rem);
+  /* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #banner-310 {
+        /* 144px - 252px */
+        padding-top: clamp(9rem, 25vw, 10.75rem);
+        /* 80px - 140px */
+        padding-bottom: clamp(5rem, 13vw, 3.75rem);
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(1280 / 16 * 1rem);
+            margin: auto;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
+        }
+
+        .cs-int-title {
+            /* 39px - 49px */
+            font-size: clamp(2.4375rem, 4.5vw, 3.0625rem);
+            font-weight: 900;
+            line-height: 1.2em;
+            text-align: center;
+            max-width: calc(700 / 16 * 1rem);
+            margin: 0 auto calc(12 / 16 * 1rem);
+            color: var(--bodyTextColorWhite);
             position: relative;
-            z-index: 1;
+        }
+
+        .cs-breadcrumbs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cs-link {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            line-height: 1.2em;
+            text-decoration: none;
+            color: var(--bodyTextColorWhite);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:last-of-type {
+                /* remove the chevron on the last list item */
+                &::after {
+                    display: none;
+                }
+            }
+
+            &:after {
+                /* chevron - added as pseudo to make adding and removing them easier */
+                content: "";
+                width: calc(7 / 16 * 1rem);
+                height: calc(12 / 16 * 1rem);
+                margin-left: calc(12 / 16 * 1rem);
+                margin-right: calc(12 / 16 * 1rem);
+                background: url("/assets/svgs/chevron.svg");
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            &.cs-active {
+                color: var(--primaryLight);
+            }
+        }
+
+        .cs-background {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            z-index: -1;
 
             &:before {
+                /* black overlay box */
                 content: "";
                 width: 100%;
                 height: 100%;
                 background: #000;
-                opacity: 0.7;
+                opacity: 0.72;
+                position: absolute;
                 display: block;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+
+            img {
                 position: absolute;
                 top: 0;
                 left: 0;
-                z-index: -1;
-            }
-
-            picture {
-                width: 100%;
                 height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: -2;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                }
-            }
-
-            h1 {
-                font-size: var(--headerFontSize);
-                text-align: center;
-                width: 96%;
-                max-width: (500/16rem);
-                margin: 0 auto;
-                margin-top: (70/16rem);
-                margin-bottom: (30/16rem);
-                color: #fff;
-                position: relative;
-            }
-
-            p {
-                text-align: center;
-                width: 96%;
-                max-width: (400/16rem);
-                margin: auto;
-                margin-bottom: (30/16rem);
-                color: #fff;
-                display: block;
+                width: 100%;
+                object-fit: cover;
             }
         }
     }
-
-    /* Small Desktop */
-    @media only screen and (min-width: 64em) {
-        #int-hero {
-            height: auto;
-            min-height: (300/16rem);
-            padding-top: (180/16rem);
-            background-attachment: fixed;
-            padding-block-end: (100/16rem);
-        }
-    }
+}
 </style>
