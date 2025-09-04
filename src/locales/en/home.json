@@ -1,69 +1,60 @@
 {
     "layout":{
-      "title":"Pixel Perfect Websites",
-      "description":"Meta description for the page"
+      "title":"Doko Studio | Web Design, SEO, Branding & Digital Solutions",
+      "description":"Doko Studio helps businesses grow with modern websites, SEO, Google Business management, and branding services. Build your strong digital presence today."
     },
     "hero":{
-      "topper":"Advanced Kit",
+      "topper":"Plan for a Strong Digital Presence",
       "title":{
-        "1":"Advanced Astro v5",
-        "2":"i18n"
+        "1":"Grow Your Business with Our Expert Digital Solutions"
       },
-      "p1":"This advanced kit includes a pre-configured Astro environment, which allows for repeated components, centralized data and greater room to scale as your clients grow. This kit is specially designed for customers who want a multi-language site, and is therefore configured with Astro's internationalization tools (i18n) for two languages: English and French.",
-      "p2":"This kit is powered by astrolicious/i18n, which is now unmaintained. The package, and this kit, should still work, but be extra careful when updating Astro versions.",
-      "cta1":"Explore More",
-      "cta2":"Get in touch"
+      "p1":"From strategy to execution, we help you stand out online and achieve measurable growth.",
+      "cta1":"Request a Consultation"
     },
-    "services":[
+    "whychoose":[
       {
-        "heading":"Service 1",
-        "p":"Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences."
+        "topper":"Why Choose Us",
+        "heading":"Creative Solutions, Trusted Results",
+        "p":"At Doko Studio, we combine creativity, strategy, and innovation to bring your brand to life. From design to digital execution, our team is committed to delivering results that inspire confidence and help your business grow."
       },
       {
-        "heading":"Service 2",
-        "p":"Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences."
+        "heading":"Proven Expertise",
+        "p":"Years of experience helping businesses achieve their goals through design, marketing, and development."
       },
       {
-        "heading":"Service 3",
-        "p":"Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences."
+        "heading":"Reliable & Secure",
+        "p":"We ensure reliable, high-quality solutions with a strong focus on trust, transparency, and security."
+      },
+      {
+        "heading":"Ongoing Support",
+        "p":"Our team is here whenever you need us, offering guidance and support long after your project is complete."
       }
     ],
-    "about":{
-      "topper":"About Us",
-      "title":"About Company Title",
-      "p1":"Our company was created In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.",
-      "p2":"We believe that In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.",
-      "p3":"It's important In consequat tincidunt turpis sit amet imperdiet.",
-      "rank":"CEO-Founder",
-      "cta":"More about us"
-    },
-    "extra":{
-      "topper":"SEO Ranking",
-      "title":"Talk about a main service keyword",
-      "p1":"Our main service In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.",
-      "p2":"Research shows that In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per."
-    },
-    "portfolio":{
-      "topper":"Our Portfolio",
-      "title":"Et orci volutpat, back up generator installations",
-      "cta":"View Our Products"
+    "services":{
+      "topper":"Our Services",
+      "title":"Industries We Work With",
+      "p":"At Doko Studio, we deliver tailored digital solutions that match the unique needs of every business. We’ve worked across diverse industries. Our goal is to help your brand stand out and thrive in today’s digital world.",
+      "s1":"Real Estate",
+      "s2":"Hospitality & Tourism",
+      "s3":"Healthcare & Wellness",
+      "s4":"E-commerce & Retail",
+      "s5":"Professional Services"
     },
     "reviews":{
       "topper":"Our Reviews",
-      "title":"Words from our customers",
-      "p":"Our clients are In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.",
+      "title":"What Our Clients Say",
+      "p":"We take pride in delivering high-quality digital solutions that help our clients succeed. Here are some of the experiences and feedback shared by businesses who trusted Doko Studio with their websites, SEO, Google Business management, and branding.",
       "reviews":[
         {
-          "review":"Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor.",
-          "name":"John Doe",
-          "rank":"Homeowner"
+          "review":"Doko Studio transformed our online presence. The new website is fast, modern, and our search rankings have improved dramatically. We’ve seen a clear increase in inquiries since launch.",
+          "name":"Eli K.",
+          "rank":"Marketing Manager at GreenWave Consulting"
         },
         {
-          "review":"Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor.",
-          "name":"Jane Doe",
-          "rank":"Homeowner"
+          "review":"The team at Doko Studio handled everything from branding to Google Business management. They made the process simple and delivered results that exceeded our expectations.",
+          "name":"Ardit B.",
+          "rank":"Founder of FreshPoint Albania"
         }
-      ],
-      "cta":"Our Reviews"
+      ]
     }
   }

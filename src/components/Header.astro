@@ -6,12 +6,12 @@ import Settings from "./TemplateComponents/Settings.astro";
 ---
 
 <!-- ============================================ --><!--                 Navigation                   --><!-- ============================================ -->
-<header id="cs-navigation">
+<header id="cs-navigation" class={Astro.url.pathname === "/" ? "homepage" : ""}>
   <div class="cs-container">
     <!--Nav Logo-->
     <a href={getLocalePath("/")} class="cs-logo" aria-label="back to home">
       <img
-        src="/assets/svgs/logo-black.svg"
+        src="/assets/svgs/logo.svg"
         alt="logo"
         width="210"
         height="29"
@@ -131,7 +131,6 @@ import Settings from "./TemplateComponents/Settings.astro";
         overflow: hidden;
       }
     }
-
     #cs-navigation {
       /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
       font-family: "Roboto", "Arial", sans-serif;
@@ -700,6 +699,11 @@ import Settings from "./TemplateComponents/Settings.astro";
 
   /* Dark Mode */
   @media only screen and (min-width: 0rem) {
+    .in-hero{
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
+    
     body.dark-mode {
       #cs-navigation {
         .cs-drop-ul {

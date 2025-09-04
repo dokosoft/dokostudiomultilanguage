@@ -6,11 +6,13 @@
     "project-2": "Project 2",
     "blog": "Blog",
     "contact": "Contact",
-    "theme-label": "Choisissez le thème",
-    "language-label": "Choisissez la langue",
+    "theme-label": "Choose theme",
+    "language-label": "Choose language",
     "languageSelect": {
         "en": "English",
-        "fr": "French"
+        "de": "German",
+        "al": "Albanian",
+        "gr": "Greek"
     },
     "themeSelect": {
         "accessibleLabel": "Select Theme",
@@ -21,11 +23,11 @@
     "quote": "Get Free Quote",
     "estimate": "Get an estimate now",
     "ctaComponent": {
-        "title": "Get it done",
-        "subtitle": "With us today",
-        "message": "Say something catchy, informative, and encouraging to click the button to go to the contact page. I like to add these to the bottom of all pages.",
-        "cta": "Get an estimate now",
-        "alt": ""
+        "topper": "Start Now",
+        "title": "Let’s Build Your Next Success Story",
+        "message": "Ready to grow your business with powerful digital solutions? Our team is here to design, optimize, and launch your vision — starting today.",
+        "cta": "Let’s Start Your Project Now",
+        "alt": "cta image box"
     },
     "about-page": {
         "landing": "About",
@@ -38,12 +40,10 @@
         "cta": "Our projects"
     },
     "footer": {
-        "information": "Information",
+        "pages": "Pages",
         "services": "Services",
         "contact": "Contact",
-        "click": "Click to email",
-        "p": "Extra content if you need it, if not you can delete this whole p tag. I usually do.",
-        "credit": "Designed and Hand Coded by "
+        "p": "We’re more than just a digital agency — we’re the bridge between bold ideas and measurable results."
     },
     "notFound": {
         "pageNotFound": "404 - The page you're looking for does not exist.",
