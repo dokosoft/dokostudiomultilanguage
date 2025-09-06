@@ -12,5 +12,29 @@
         "message-placeholder": "I'd be interested in...",
         "address": "Address"
     },
-    "cta": "Submit message"
+    "cta": "Submit message",
+    "faq": {
+        "topper": "Asked Questions",
+        "title": "Frequently Asked Questions",
+        "q1": {
+            "question": "How long does it take to build a static business website?",
+            "answer": "A static site typically takes 1–3 weeks depending on the complexity, design requirements, and the content provided."
+        },
+        "q2": {
+            "question": "Can you redesign my existing website into a static version?",
+            "answer": "Yes. We can rebuild your existing site as a static website while preserving your brand identity and improving performance."
+        },
+        "q3": {
+            "question": "How soon can I see SEO results?",
+            "answer": "SEO is a long-term strategy. You can expect noticeable improvements within 3–6 months, depending on competition and your website’s current status."
+        },
+        "q4": {
+            "question": "Why should I manage my Google Business Page?",
+            "answer": "An optimized Google Business Profile boosts local visibility, increases trust, and drives more customers to your location or website. "
+        },
+        "q5": {
+            "question": "What does branding include?",
+            "answer": " Branding includes your logo, color palette, typography, messaging, and brand guidelines — all designed to create a consistent and professional image."
+        }
+    }
 }

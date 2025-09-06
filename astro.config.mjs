@@ -16,12 +16,37 @@ export default defineConfig({
       },
       // used to localize the routes
       pages: {
-				"/about": {
-					 de: "/uber-uns",
-           al: "/rreth-nesh",
-           gr: "/sxetika-me-emas",
-				}
-			},
+        "/about": {
+          de: "/uber-uns",
+          al: "/rreth-nesh",
+          gr: "/sxetika-me-emas",
+        },
+        "/contact": {
+          de: "/kontakt",
+          al: "/kontakti",
+          gr: "/epikoinonia",
+        },
+        "/services/seo": {
+          de: "/dienstleistungen/seo",
+          al: "/sherbimet/seo",
+          gr: "/ypiresies/seo", // optional, but nice to have
+        },
+        "/services/static-websites-business": {
+          de: "/dienstleistungen/statische-websites-fur-unternehmen",
+          al: "/sherbimet/faqe-statik-per-biznes",
+          gr: "/ypiresies/statikes-istoselides-gia-epixeiriseis",
+        },
+        "/services/google-business-pages-management": {
+          de: "/dienstleistungen/google-business-seiten-verwaltung",
+          al: "/sherbimet/menaxhimi-i-faqeve-te-google-business",
+          gr: "/ypiresies/dioikisi-selidon-google-business",
+        },
+        "/services/branding": {
+          de: "/dienstleistungen/branding",
+          al: "/sherbimet/branding",
+          gr: "/ypiresies/branding",
+        },
+      },
     }),
     sitemap({
       i18n: {

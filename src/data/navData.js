@@ -14,19 +14,19 @@ const navData = [
     children: [
       {
         key: "Static Websites Business",
-        url: "/services/static-websites-business/"
+        url: "/services/static-websites-business"
       },
       {
         key: "SEO",
-        url: "/services/seo/"
+        url: "/services/seo"
       },
       {
         key: "Google Business Pages Management",
-        url: "/services/google-business-pages-management/"
+        url: "/services/google-business-pages-management"
       },
       {
         key: "Branding",
-        url: "/services/branding/"
+        url: "/services/branding"
       }
     ]
   },
