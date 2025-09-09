@@ -1,0 +1,732 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import CTA from "@components/CTA.astro";
+import Landing from "@components/Landing.astro";
+import {getLocalePath,t } from "i18n:astro";
+
+// Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Landing (for rendering)
+import {getOptimizedImage} from "@utils/utils"
+import landingImage from "@assets/images/WebBannerBackgroundIllustration.jpg" // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
+const optimizedImage = await getOptimizedImage(landingImage)
+---
+
+<BaseLayout
+  title={t("industries:real-estate.landing")}
+  description="Boost your rankings with expert SEO. We improve visibility, traffic, and conversions through keyword strategy, optimization, and link building."
+  preloadedImage = {optimizedImage}
+>
+  <!-- ============================================ -->
+  <!--                    LANDING                   -->
+  <!-- ============================================ -->
+
+  <Landing 
+    title={t("industries:real-estate.landing")} 
+    image={optimizedImage}
+    url="/services/seo"
+  />
+
+  <!-- ============================================ -->
+  <!--            Side By Side Reverse              -->
+  <!-- ============================================ -->
+
+  <section id="sbsr-1363">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-background">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/seo.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/seo.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/seo.jpg" alt="people" width="605868" height="690">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">{t("industries:real-estate.topper")}</span>
+            <h2 class="cs-title">{t("industries:real-estate.landing")} </h2>
+            <p class="cs-text">
+                {t("industries:real-estate.p")}
+            </p>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/black-check.svg" alt="checkmark" width="24" height="24">
+                    {t("industries:real-estate.l1")}
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/black-check.svg" alt="checkmark" width="24" height="24">
+                    {t("industries:real-estate.l2")}
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/black-check.svg" alt="checkmark" width="24" height="24">
+                    {t("industries:real-estate.l3")}
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/black-check.svg" alt="checkmark" width="24" height="24">
+                    {t("industries:real-estate.l4")}
+                </li>
+            </ul>
+            <a href={getLocalePath("/contact")} class="cs-button-solid">{t("industries:real-estate.cta")}</a>
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+                                
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-1741">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">{t("industries:real-estate.faq.topper")}</span>
+            <h2 class="cs-title">{t("industries:real-estate.faq.title")}</h2>
+            <a href="/contact" class="cs-button-solid">
+                Ask Another Question
+            </a>
+        </div>
+        <div class="cs-flex-group">
+            <ul class="cs-faq-group">
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Can you integrate property listings with platforms like Airbnb or Booking?
+                        </span>
+                    </button>
+                    <p class="cs-item-text">
+                        Yes, we can connect your website with third-party platforms such as Airbnb, Booking.com, or MLS systems, so your listings update automatically across all channels.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Will my real estate website include a property search feature?
+                        </span>
+                    </button>
+                    <p class="cs-item-text">
+                        Absolutely! We can include advanced search filters for price, location, size, and property type to make it easy for visitors to find exactly what they’re looking for.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Can I add and manage new listings myself?
+                        </span>
+                    </button>
+                    <p class="cs-item-text">
+                        Yes, you will have full control over adding, editing, or removing property listings through an easy-to-use dashboard without needing technical knowledge.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you provide virtual tour integration for properties?
+                        </span>
+                    </button>
+                    <p class="cs-item-text">
+                        Yes, we can integrate 360° virtual tours, video walkthroughs, and image galleries to give potential buyers and renters an immersive experience online.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Will my website work on mobile devices?
+                        </span>
+                    </button>
+                    <p class="cs-item-text">
+                        All our real estate websites are fully responsive, ensuring listings and property showcases look great and function perfectly on smartphones and tablets.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+  <CTA />
+</BaseLayout>
+
+<style lang="less">
+  /* PAGE-SPECIFIC STYLES FOR THE ABOUT PAGE */
+
+  /*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+/*-- -------------------------- -->
+<---   Side By Side Reverse     -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    @keyframes floatAnimation {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-2rem);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes floatAnimation2 {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-3rem);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    #sbsr-1363 {
+        padding: var(--sectionPadding);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            /* changes to 1280px at desktop */
+            max-width: calc(584 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            max-width: calc(630 / 16 * 1rem);
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+
+        .cs-topper {
+            
+        }
+
+        .cs-title {
+            /* 23 characters wide including spaces */
+            max-width: 26ch;
+        }
+
+        .cs-text {
+            margin-bottom: calc(16 / 16 * 1rem);
+            &:last-of-type {
+                margin-bottom: calc(24 / 16 * 1rem);
+            }
+        }
+
+        .cs-card-group {
+            width: 100%;
+            max-width: calc(630 / 16 * 1rem);
+            margin: 0 0 calc(24 / 16 * 1rem) 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(15.265rem, 1fr));
+            align-items: center;
+            gap: clamp(1rem, 2vw, 1.25rem);
+        }
+
+        .cs-item {
+            list-style: none;
+            /* 16px - 24px */
+            padding: clamp(1rem, 3vw, 1.5rem);
+            /* prevents padding from affecting height and width */
+            box-sizing: border-box;
+            background-color: #f7f7f7;
+            border-radius: calc(16 / 16 * 1rem);
+            border: 1px solid #e8e8e8;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: calc(12 / 16 * 1rem);
+        }
+
+        .cs-h3 {
+            font-size: calc(20 / 16 * 1rem);
+            line-height: 1.2em;
+            font-weight: 700;
+            margin: 0;
+            color: var(--headerColor);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: calc(8 / 16 * 1rem);
+        }
+
+        .cs-h3-icon {
+            width: calc(32 / 16 * 1rem);
+            height: auto;
+            display: block;
+        }
+
+        .cs-item-text {
+            font-size: calc(14 / 16 * 1rem);
+            line-height: 1.5em;
+            margin: 0;
+            color: var(--bodyTextColor);
+        }
+
+        .cs-ul {
+            width: 100%;
+            margin: 0 0 calc(24 / 16 * 1rem) 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: calc(12 / 16 * 1rem);
+        }
+
+        .cs-li {
+            font-size: var(--bodyFontSize);
+            list-style: none;
+            line-height: 1.5em;
+            width: 100%;
+            color: var(--bodyTextColor);
+            display: flex;
+            justify-content: flex-start;
+            /* push icon top the top so if the list item goes to two lines the icon stays at the top */
+            align-items: flex-start;
+            gap: calc(8 / 16 * 1rem);
+        }
+
+        .cs-icon {
+            width: calc(24 / 16 * 1rem);
+            height: auto;
+            /* adds extra space between the icon and top of parent so it's more centered */
+            margin-top: 1px;
+            display: block;
+        }
+
+        .cs-button-solid {
+            font-size: calc(16 / 16 * 1rem);
+            line-height: calc(56 / 16 * 1rem);
+            text-decoration: none;
+            font-weight: 700;
+            overflow: hidden;
+            margin: 0;
+            color: #fff;
+            padding: 0 calc(48 / 16 * 1rem);
+            border-radius: calc(30 / 16 * 1rem);
+            background-color: var(--primary);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            transition: color 0.3s;
+
+            &:before {
+                content: "";
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 0%;
+                background: #1a1a1a;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: width 0.3s;
+            }
+
+            &:hover {
+                color: var(--primary);
+                &:before {
+                    width: 100%;
+                }
+            }
+        }
+
+        .cs-image-group {
+            width: 100%;
+            max-width: calc(586 / 16 * 1rem);
+            /* Changes to auto at desktop */
+            height: calc(520 / 16 * 1rem);
+            /* 32px - 48px */
+            border-radius: clamp(2rem, 4vw, 3rem);
+            /* clips the corners of the children around the border radius */
+            overflow: hidden;
+            position: relative;
+        }
+
+        .cs-background {
+            width: 100%;
+            height: 100%;
+            max-height: 570px;
+            /* makes it cover the parent dimensions */
+            object-fit: cover;
+            display: block;
+
+            img {
+                width: 100%;
+                height: 100%;
+                /* makes it cover the parent like a backgorund image */
+                object-fit: cover;
+                display: block;
+            }
+        }
+
+        .cs-box {
+            text-align: left;
+            width: 100%;
+            max-width: calc(304 / 16 * 1rem);
+            padding: calc(32 / 16 * 1rem);
+            /* prevents padding from affecting height and width */
+            box-sizing: border-box;
+            background-color: var(--primary);
+            /* 48px - 80px */
+            border-radius: calc(32 / 16 * 1rem);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: calc(24 / 16 * 1rem);
+            position: absolute;
+            /* 12px - 20px */
+            right: clamp(0.75rem, 1.9vw, 1.5rem);
+            /* 12px - 20px */
+            bottom: clamp(0.75rem, 1.9vw, 1.5rem);
+        }
+
+        .cs-box-icon {
+            width: calc(60 / 16 * 1rem);
+            height: auto;
+            display: block;
+        }
+
+        .cs-desc {
+            font-size: calc(20 / 16 * 1rem);
+            line-height: 1.2em;
+            text-align: inherit;
+            font-weight: 700;
+            width: 100%;
+            margin: 0;
+            color: var(--bodyTextColorWhite);
+        }
+
+        .cs-bubbles {
+            font-size: min(2.5vw, 0.7em);
+            width: calc(419 / 16 * 1em);
+            height: calc(427 / 16 * 1em);
+            position: absolute;
+            /* Reset at larger desktop */
+            right: calc(-260 / 16 * 1em);
+            /* chnages to 30px at desktop */
+            bottom: calc(-50 / 16 * 1em);
+            z-index: -1;
+
+            &:before {
+                /* white border bubble */
+                content: "";
+                width: calc(330 / 16 * 1em);
+                height: calc(330 / 16 * 1em);
+                background: transparent;
+                border: 1px solid #1a1a1a;
+                border-radius: 50%;
+                opacity: 1;
+                position: absolute;
+                display: block;
+                top: 0;
+                right: 0;
+                animation-name: floatAnimation;
+                animation-duration: 5s;
+                animation-timing-function: ease-in-out;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+            }
+
+            &:after {
+                /* orange bubble */
+                content: "";
+                width: calc(260 / 16 * 1em);
+                height: calc(260 / 16 * 1em);
+                background: var(--primary);
+                opacity: 0.15;
+                border-radius: 50%;
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: -1;
+                animation-name: floatAnimation2;
+                animation-duration: 14s;
+                animation-timing-function: ease-in-out;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #sbsr-1363 {
+        .cs-container {
+            max-width: calc(1280 / 16 * 1rem);
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+
+        .cs-image-group {
+            height: auto;
+            /* sends it to the right in the 2nd position */
+            order: 2;
+        }
+
+        .cs-bubbles {
+            font-size: min(2.5vw, 1em);
+            bottom: calc(0 / 16 * 1rem);
+            right: calc(-100 / 16 * 1rem);
+        }
+    }
+}
+
+/* Large Desktop 1600px */
+@media only screen and (min-width: 100rem) {
+    #sbsr-1363 {
+        .cs-bubbles {
+            margin-right: calc(750 / 16 * 1rem);
+            left: auto;
+            right: 50%;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #sbsr-1363 {
+            .cs-topper {
+                color: var(--primary);
+            }
+
+            .cs-title,
+            .cs-text,
+            .cs-li,
+            .cs-item-text {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-text,
+            .cs-li,
+            .cs-item-text {
+                opacity: 0.8;
+            }
+
+            .cs-item {
+                background-color: rgba(0, 0, 0, 0.2);
+                border-color: rgba(255, 255, 255, 0.2);
+            }
+
+            .cs-h3 {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-icon {
+                filter: grayscale(1) brightness(1000%);
+            }
+
+            .cs-bubbles {
+                &:before {
+                    border-color: rgba(255, 255, 255, 0.2);
+                }
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---           Steps            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #steps-1675 {
+        padding: var(--sectionPadding);
+
+        .cs-container {
+            width: 100%;
+            /* changes to 1920px at tablet */
+            max-width: calc(584 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            padding: 0 calc(16 / 16 * 1rem);
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+        }
+
+        .cs-text {
+            /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
+            max-width: calc(522 / 16 * 1rem);
+        }
+
+        .cs-card-group {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            justify-items: center;
+            align-items: stretch;
+            grid-auto-flow: row;
+        }
+
+        .cs-item {
+            list-style: none;
+            /* prevents padding and border from affecting height and width */
+            box-sizing: border-box;
+            padding: calc(24 / 16 * 1rem);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+
+            /* bottom border */
+            &::after {
+                content: "";
+                width: 100%;
+                height: 1px;
+                /* to change the color of the bottom border, adjust the second color (at 50%). the first and third will blend the color to transparent */
+                /* note you'll also have to change the color in the tablet media query when the lines go vertical */
+                background: linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(186, 186, 186, 1) 50%,
+                    rgba(255, 255, 255, 0) 100%
+                );
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+
+            &:first-of-type {
+                padding-top: 0;
+            }
+
+            &:last-of-type {
+                padding-bottom: 0;
+
+                &::after {
+                    content: none;
+                }
+            }
+        }
+
+        .cs-number {
+            /* 80px - 100px */
+            font-size: clamp(5rem, 1vw, 6.25rem);
+            font-weight: 900;
+            line-height: 1.2em;
+            color: var(--primary);
+            opacity: 0.12;
+            display: block;
+        }
+
+        .cs-h3 {
+            /* 20px - 25px */
+            font-size: clamp(1.25rem, 2vw, 1.5625rem);
+            font-weight: 700;
+            line-height: 1.2em;
+            margin: calc(-31 / 16 * 1rem) 0 calc(16 / 16 * 1rem) 0;
+            color: var(--headerColor);
+        }
+
+        .cs-item-text {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            line-height: 1.5em;
+            text-align: left;
+            margin: 0;
+            color: var(--bodyTextColor);
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #steps-1675 {
+        .cs-container {
+            max-width: calc(1920 / 16 * 1rem);
+        }
+
+        .cs-card-group {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+        }
+
+        .cs-item {
+            /* 24px - 60px */
+            padding: clamp(1.5rem, 3vw, 3.75rem);
+
+            &::after {
+                width: 1px;
+                height: 100%;
+                background: linear-gradient(
+                    0deg,
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(186, 186, 186, 1) 50%,
+                    rgba(255, 255, 255, 0) 100%
+                );
+                opacity: .6;
+                opacity: .6;
+                right: 0;
+                left: initial;
+            }
+
+            /* the specificity of the mobile .cs-item means we need to explicitly define the first and last items here, too */
+            &:first-of-type,
+            &:last-of-type {
+                /* 24px - 60px */
+                padding: clamp(1.5rem, 3vw, 3.75rem);
+            }
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #steps-1675 {
+            .cs-topper {
+                color: var(--primaryLight);
+            }
+            .cs-title {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-item {
+                border-color: var(--bodyTextColorWhite);
+                &:after {
+                    opacity: .2;
+                }
+            }
+
+            .cs-item-text, .cs-text {
+                color: var(--bodyTextColorWhite);
+                opacity: 0.8;
+            }
+
+            .cs-h3,
+            .cs-number {
+                color: var(--primaryLight);
+            }
+        }
+    }
+}
+</style>

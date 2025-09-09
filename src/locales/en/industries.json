@@ -1,0 +1,39 @@
+{   
+    "real-estate": {
+        "landing": "Real Estate",
+        "topper": "Industries",
+        "title": "Real Estate",
+        "p": "In today’s real estate market, a strong online presence helps agencies and agents reach more buyers, renters, and investors. From showcasing properties to gaining trust, having the right digital setup is essential.",
+        "l1": "Highlight property listings with professional layouts.",
+        "l2": "Easy-to-use navigation for buyers and renters.",
+        "l3": "Mobile-friendly for clients browsing on the go.",
+        "l4": "Improve lead generation with optimized landing pages.",
+        "cta": "Showcase My Properties",
+        "faq": {
+            "topper": "Frequently Asked Questions",
+            "title": "Real Estate – Websites for Agencies, Rentals, and Property Showcases",
+            "cta": "Ask Another Question",
+            "q1": {
+                "q": "Can you integrate property listings with platforms like Airbnb or Booking?",
+                "a": "Yes, we can connect your website with third-party platforms such as Airbnb, Booking.com, or MLS systems, so your listings update automatically across all channels."
+            },
+            "q2": {
+                "q": "Will my real estate website include a property search feature?",
+                "a": "Absolutely! We can include advanced search filters for price, location, size, and property type to make it easy for visitors to find exactly what they’re looking for."
+            },
+            "q3": {
+                "q": "Can I add and manage new listings myself?",
+                "a": "Yes, you will have full control over adding, editing, or removing property listings through an easy-to-use dashboard without needing technical knowledge."
+            },
+            "q4": {
+                "q": "Do you provide virtual tour integration for properties?",
+                "a": "Yes, we can integrate 360° virtual tours, video walkthroughs, and image galleries to give potential buyers and renters an immersive experience online."
+            },
+            "q5": {
+                "q": "Will my website work on mobile devices?",
+                "a": "All our real estate websites are fully responsive, ensuring listings and property showcases look great and function perfectly on smartphones and tablets."
+            }
+        }
+    }
+    
+}
