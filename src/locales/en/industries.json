@@ -34,6 +34,150 @@
                 "a": "All our real estate websites are fully responsive, ensuring listings and property showcases look great and function perfectly on smartphones and tablets."
             }
         }
+    },
+    "hospitality-tourism": {
+        "landing": "Hospitality & Tourism",
+        "topper": "Industries",
+        "title": "Hospitality & Tourism",
+        "p": "Hotels, restaurants, and travel services rely on visibility and trust. With travelers making decisions online, it’s vital to stand out and provide clear, engaging information.",
+        "l1": "Showcase menus, rooms, or travel packages.",
+        "l2": "Simple booking/contact forms.",
+        "l3": "Mobile-friendly for clients browsing on the go.",
+        "l4": "Drive bookings directly from organic search.",
+        "cta": "Book More Guests",
+        "faq": {
+            "topper": "Frequently Asked Questions",
+            "title": "Hospitality & Tourism – Hotels, Restaurants, Travel Services",
+            "cta": "Ask Another Question",
+            "q1": {
+                "q": "Can my website include online booking and reservations?",
+                "a": "Yes, we can integrate booking systems for hotel rooms, restaurant reservations, and travel packages with real-time availability and confirmations."
+            },
+            "q2": {
+                "q": "Do you support multi-language websites for international guests?",
+                "a": "Absolutely! We can build your website with multiple language options to attract and serve international customers more effectively."
+            },
+            "q3": {
+                "q": "Can I display menus, room details, or tour packages online?",
+                "a": "Yes, your website can showcase menus, room details with photos, amenities, and travel packages, making it easy for visitors to explore your services."
+            },
+            "q4": {
+                "q": "Will my website allow online payments?",
+                "a": "Yes, we can integrate secure payment gateways so guests can pay deposits, bookings, or packages directly through your website."
+            },
+            "q5": {
+                "q": "Can I collect customer reviews and testimonials?",
+                "a": "Definitely! We can add review and testimonial sections where satisfied customers can share their experiences to build trust with future guests."
+            }
+        }
+    },
+    "healthcare-wellness": {
+        "landing": "Healthcare & Wellness",
+        "topper": "Industries",
+        "title": "Healthcare & Wellness",
+        "p": "Trust and credibility are key in healthcare and wellness. A well-presented digital presence reassures patients and helps practices attract more appointments.",
+        "l1": "Informative pages about services and treatments.",
+        "l2": "Easy appointment booking/contact options.",
+        "l3": "Secure, professional, and accessible design.",
+        "l4": "Build a professional, trustworthy identity.",
+        "cta": "Grow More",
+        "faq": {
+            "topper": "Frequently Asked Questions",
+            "title": "Healthcare & Wellness – Clinics, Dental Practices, Skincare/Beauty Brands",
+            "cta": "Ask Another Question",
+            "q1": {
+                "q": "Can patients book appointments online?",
+                "a": "Yes, we can add appointment booking systems that let patients select available dates and times directly from your website."
+            },
+            "q2": {
+                "q": "Will my website be HIPAA or GDPR compliant?",
+                "a": "We follow strict security and privacy standards, ensuring your website complies with HIPAA (for healthcare data) or GDPR (for EU regulations)."
+            },
+            "q3": {
+                "q": "Can I showcase my services and treatments?",
+                "a": "Absolutely! We can build detailed service pages that explain treatments, pricing, and benefits, complete with images and videos."
+            },
+            "q4": {
+                "q": "Can I integrate a blog for health tips or skincare advice?",
+                "a": "Yes, a blog can help you share expertise, attract new patients, and improve your SEO so more people find your services online."
+            },
+            "q5": {
+                "q": "Will my website work on mobile for quick access?",
+                "a": "Yes, all healthcare and wellness websites we create are mobile-friendly so patients can book appointments or view services on the go."
+            }
+        }
+    },
+    "ecommerce-retail": {
+        "landing": "E-commerce & Retail",
+        "topper": "Industries",
+        "title": "E-commerce & Retail",
+        "p": "From fashion to consumer goods, having a strong digital presence is the difference between being seen and being forgotten. Clear branding and optimized search can turn visitors into loyal customers.",
+        "l1": "Fast-loading product showcase websites.",
+        "l2": "Clean design with clear product categories.",
+        "l3": "Mobile-first layouts for shoppers on phones.",
+        "l4": "Optimize products and categories for search engines.",
+        "cta": "Launch My Store",
+        "faq": {
+            "topper": "Frequently Asked Questions",
+            "title": "E-commerce & Retail – Online Shops, Fashion, Consumer Products",
+            "cta": "Ask Another Question",
+            "q1": {
+                "q": "What payment methods can I offer my customers?",
+                "a": "We can integrate popular payment methods such as credit cards, PayPal, Stripe, and even local payment options depending on your target market."
+            },
+            "q2": {
+                "q": "Can my shop include product variations like size and color?",
+                "a": "Yes, your online shop can support multiple product variations, allowing customers to choose size, color, and other attributes before purchase."
+            },
+            "q3": {
+                "q": "Will my website include inventory management?",
+                "a": "Absolutely! You’ll be able to track stock levels, manage inventory, and get notifications when products are running low."
+            },
+            "q4": {
+                "q": "Can I run promotions and discount codes?",
+                "a": "Yes, we can set up discount codes, seasonal sales, and special promotions to boost your sales and customer engagement."
+            },
+            "q5": {
+                "q": "Will my store be optimized for SEO?",
+                "a": "Every e-commerce site we build is SEO-friendly, helping your products rank higher on Google and bringing more customers to your store."
+            }
+        }
+    },
+    "professional-services": {
+        "landing": "Professional Services",
+        "topper": "Industries",
+        "title": "Professional Services",
+        "p": "For consultants, agencies, law firms, and other service providers, a professional online presence is key to establishing authority and attracting new clients.",
+        "l1": "Showcase expertise and case studies.",
+        "l2": "Simple contact and inquiry forms.",
+        "l3": "Sleek and professional design.",
+        "l4": "Improve visibility in competitive industries.",
+        "cta": "Build My Online Presence",
+        "faq": {
+            "topper": "Frequently Asked Questions",
+            "title": "Professional Services – Consulting Firms, Agencies, Law/Accounting Offices",
+            "cta": "Ask Another Question",
+            "q1": {
+                "q": "Can clients book consultations online?",
+                "a": "Yes, we can add a booking system so clients can schedule meetings or consultations directly through your website."
+            },
+            "q2": {
+                "q": "Can I showcase my team and expertise?",
+                "a": "Absolutely! We can create dedicated team pages with bios, credentials, and expertise areas to build trust with potential clients."
+            },
+            "q3": {
+                "q": "Will my website include case studies or client testimonials?",
+                "a": "Yes, we can highlight client success stories and testimonials to demonstrate the value and results of your services."
+            },
+            "q4": {
+                "q": "Can I accept payments or invoices online?",
+                "a": "Definitely! We can integrate secure online payment and invoicing systems to make transactions easier for your clients."
+            },
+            "q5": {
+                "q": "Will my website help me generate leads?",
+                "a": "Yes, we optimize professional service websites with lead capture forms, calls-to-action, and contact options to help grow your client base."
+            }
+        }
     }
     
 }

@@ -104,3 +104,12 @@ document.addEventListener('astro:page-load', () => { // Make the script controll
         });
     });   
 });
+
+//faq functionality
+const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+            item.classList.toggle('active')
+        }
+        item.addEventListener('click', onClick)
+        }
