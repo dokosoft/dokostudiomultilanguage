@@ -2,7 +2,7 @@
 import BaseLayout from "@layouts/BaseLayout.astro";
 import CTA from "@components/CTA.astro";
 import Landing from "@components/Landing.astro";
-import { t } from "i18n:astro";
+import { getLocalePath,t } from "i18n:astro";
 
 // Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Landing (for rendering)
 import {getOptimizedImage} from "@utils/utils"
@@ -11,7 +11,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
 ---
 
 <BaseLayout
-  title={t("home:services.title")}
+  title={t("home:services.landing")}
   description="Meta description for the page"
   preloadedImage = {optimizedImage}
 >
@@ -30,66 +30,79 @@ const optimizedImage = await getOptimizedImage(landingImage)
 <!-- ============================================ -->
 
 <section id="services-1131">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Our Services</span>
-            <h2 class="cs-title">We Are Here to Help Them</h2>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quia odit omnis eligendi libero porro quisquam delectus, dolore maiores qui minus suscipit optio.
-            </p>
-        </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <div class="cs-image-group">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity4.svg" alt="icon" width="48" height="48">
-                    <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity-shape.svg" alt="graphic" width="100" height="103">
-                </div>
-                <div class="cs-flex">
-                    <h3 class="cs-h3">Healthy Food</h3>
-                    <p class="cs-item-text">
-                        We help companies develop powerful corporate social responsibility, grantmaking, and employee engagement strategies.
-                    </p>
-                </div>
-            </li>
-            <li class="cs-item">
-                <div class="cs-image-group">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity5.svg" alt="icon" width="48" height="48">
-                    <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity-shape.svg" alt="graphic" width="100" height="103">
-                </div>
-                <div class="cs-flex">
-                    <h3 class="cs-h3">Kids Education</h3>
-                    <p class="cs-item-text">
-                        We help companies develop powerful corporate social responsibility, grantmaking, and employee engagement strategies.
-                    </p>
-                </div>
-            </li>
-            <li class="cs-item">
-                <div class="cs-image-group">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity6.svg" alt="icon" width="48" height="48">
-                    <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity-shape.svg" alt="graphic" width="100" height="103">
-                </div>
-                <div class="cs-flex">
-                    <h3 class="cs-h3">Medical Care</h3>
-                    <p class="cs-item-text">
-                        We help companies develop powerful corporate social responsibility, grantmaking, and employee engagement strategies.
-                    </p>
-                </div>
-            </li>
-            <li class="cs-item">
-                <div class="cs-image-group">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity7.svg" alt="icon" width="48" height="48">
-                    <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity-shape.svg" alt="graphic" width="100" height="103">
-                </div>
-                <div class="csflex">
-                    <h3 class="cs-h3">Medical Care</h3>
-                    <p class="cs-item-text">
-                        We help companies develop powerful corporate social responsibility, grantmaking, and employee engagement strategies.
-                    </p>
-                </div>
-            </li>
-        </ul>
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">{t("services:topper")}</span>
+      <h2 class="cs-title">{t("services:title")}</h2>
+      <p class="cs-text">
+        {t("services:p")}
+      </p>
     </div>
+
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <div class="cs-image-group">
+          <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/static.svg" alt="website icon" width="48" height="48">
+          <img class="cs-graphic" loading="lazy" decoding="async" src="/assets/svgs/charity-shape.svg" alt="" width="100" height="103" aria-hidden="true">
+        </div>
+        <div class="cs-flex">
+          <h3 class="cs-h3">
+            <a href={getLocalePath("/services/static-websites-business")}>{t("services:static.title")}</a>
+          </h3>
+          <p class="cs-item-text">
+            {t("services:static.p")}
+          </p>
+        </div>
+      </li>
+
+      <li class="cs-item">
+        <div class="cs-image-group">
+          <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/seo.svg" alt="seo icon" width="48" height="48">
+          <img class="cs-graphic" loading="lazy" decoding="async" src="/assets/svgs/charity-shape.svg" alt="" width="100" height="103" aria-hidden="true">
+        </div>
+        <div class="cs-flex">
+          <h3 class="cs-h3">
+            <a href={getLocalePath("/services/seo")}>{t("services:seo.title")}</a>
+          </h3>
+          <p class="cs-item-text">
+            {t("services:seo.p")}
+          </p>
+        </div>
+      </li>
+
+      <li class="cs-item">
+        <div class="cs-image-group">
+          <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/gmb.svg" alt="google business icon" width="48" height="48">
+          <img class="cs-graphic" loading="lazy" decoding="async" src="/assets/svgs/charity-shape.svg" alt="" width="100" height="103" aria-hidden="true">
+        </div>
+        <div class="cs-flex">
+          <h3 class="cs-h3">
+            <a href={getLocalePath("/services/google-business-pages-management")}>{t("services:googlemb.title")}</a>
+          </h3>
+          <p class="cs-item-text">
+            {t("services:googlemb.p")}
+          </p>
+        </div>
+      </li>
+
+      <li class="cs-item">
+        <div class="cs-image-group">
+          <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/branding.svg" alt="branding icon" width="48" height="48">
+          <img class="cs-graphic" loading="lazy" decoding="async" src="/assets/svgs/charity-shape.svg" alt="" width="100" height="103" aria-hidden="true">
+        </div>
+        <div class="cs-flex">
+          <h3 class="cs-h3">
+            <a href={getLocalePath("/services/branding")}>{t("services:branding.title")}</a>
+          </h3>
+          <p class="cs-item-text">
+            {t("services:branding.p")}
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
 </section>
+
   <CTA />
 </BaseLayout>
 
@@ -122,10 +135,6 @@ const optimizedImage = await getOptimizedImage(landingImage)
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
             align-items: center;
-        }
-
-        .cs-topper {
-            color: #767676;
         }
 
         .cs-card-group {
@@ -163,7 +172,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
                 border-color 0.3s;
 
             &:hover {
-                box-shadow: 0px 4px 120px 0px rgba(0, 0, 0, 0.12);
+                box-shadow: #067bc099 0px 0px 26px,#067bc08c 0px 0px 0px;
                 border-color: transparent;
                 .cs-h3 {
                     color: var(--primary);
@@ -199,14 +208,17 @@ const optimizedImage = await getOptimizedImage(landingImage)
         }
 
         .cs-h3 {
-            /* 20px - 25px */
-            font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
-            line-height: 1.2em;
-            font-weight: bold;
             text-align: inherit;
             margin: 0 0 (12/16rem) 0;
-            color: var(--headerColor);
-            transition: color 0.3s;
+            
+            a{
+              font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+              text-decoration: none;
+              color: var(--headerColorWhite);
+              transition: color 0.3s;
+              line-height: 1.2em;
+              font-weight: bold;
+            }
         }
 
         .cs-item-text {
@@ -253,13 +265,13 @@ const optimizedImage = await getOptimizedImage(landingImage)
 
                 &:hover {
                     .cs-h3 {
-                        color: var(--secondary);
+                        color: var(--primary);
                     }
                 }
             }
 
             .cs-topper {
-                color: var(--secondary);
+                color: var(--primary);
             }
 
             .cs-title,
