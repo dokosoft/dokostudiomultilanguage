@@ -1454,6 +1454,7 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage)
             width: 100%;
             max-width: (630/16rem);
             margin: 0;
+            cursor:pointer;
             /* 24px - 32px top & bottom */
             /* 16px - 40px left & right */
             padding: clamp(1.5rem, 3.15vw, 2rem) clamp(1rem, 3.15vw, 2.5rem);
@@ -1466,6 +1467,10 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage)
             align-items: flex-start;
             flex-direction: column;
             position: relative;
+            &:hover{
+                box-shadow: #067bc099 0px 0px 26px,#067bc08c 0px 0px 0px;
+            }
+            
         }
 
         .cs-quote {
