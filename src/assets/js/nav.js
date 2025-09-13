@@ -105,15 +105,6 @@ document.addEventListener('astro:page-load', () => { // Make the script controll
     });   
 });
 
-//faq functionality
-const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
-        for (const item of faqItems) {
-            const onClick = () => {
-            item.classList.toggle('active')
-        }
-        item.addEventListener('click', onClick)
-        }
-
 //transparent header
 (() => {
   let observer = null;
@@ -128,16 +119,14 @@ const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
   }
 
   function initTransparentHeader() {
-    // cleanup any previous observer (important on client-side swaps)
     if (observer) { observer.disconnect(); observer = null; }
 
     const homepage = document.querySelector('.homepage');
     const hero = document.getElementById('hero');
     if (!homepage || !hero) return;
 
-    // set initial state to avoid a flash before the first IO callback
-    setInitialState(homepage, hero, 0.1);
 
+    setInitialState(homepage, hero, 0.1);
     observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) homepage.classList.add('in-hero');
@@ -151,10 +140,30 @@ const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
   // Run on first load
   document.addEventListener('DOMContentLoaded', initTransparentHeader);
 
-  // Run when page is restored from bfcache (back/forward)
+  // Run from bfcache
   window.addEventListener('pageshow', initTransparentHeader);
 
-  // Run on Astro View Transitions (client-side navigation)
+  // Re-run
   document.addEventListener('astro:page-load', initTransparentHeader);
   document.addEventListener('astro:after-swap', initTransparentHeader);
 })();
+
+//faq functionality
+const bindFaq = () => {
+  document.querySelectorAll('.cs-faq-item').forEach((item) => {
+    if (item.dataset.bound) return;        // avoid duplicate listeners
+    item.dataset.bound = '1';
+    item.addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+};
+
+// Run on initial load
+if (document.readyState !== 'loading') bindFaq();
+else window.addEventListener('DOMContentLoaded', bindFaq);
+
+// Re-run
+window.addEventListener('astro:page-load', bindFaq);
+window.addEventListener('astro:after-swap', bindFaq);
+
