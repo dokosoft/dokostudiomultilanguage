@@ -119,14 +119,16 @@ document.addEventListener('astro:page-load', () => { // Make the script controll
   }
 
   function initTransparentHeader() {
+    // cleanup any previous observer (important on client-side swaps)
     if (observer) { observer.disconnect(); observer = null; }
 
     const homepage = document.querySelector('.homepage');
     const hero = document.getElementById('hero');
     if (!homepage || !hero) return;
 
-
+    // set initial state to avoid a flash before the first IO callback
     setInitialState(homepage, hero, 0.1);
+
     observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) homepage.classList.add('in-hero');
@@ -140,30 +142,24 @@ document.addEventListener('astro:page-load', () => { // Make the script controll
   // Run on first load
   document.addEventListener('DOMContentLoaded', initTransparentHeader);
 
-  // Run from bfcache
+  // Run when page is restored from bfcache (back/forward)
   window.addEventListener('pageshow', initTransparentHeader);
 
-  // Re-run
+  // Run on Astro View Transitions (client-side navigation)
   document.addEventListener('astro:page-load', initTransparentHeader);
   document.addEventListener('astro:after-swap', initTransparentHeader);
 })();
 
-//faq functionality
-const bindFaq = () => {
-  document.querySelectorAll('.cs-faq-item').forEach((item) => {
-    if (item.dataset.bound) return;        // avoid duplicate listeners
-    item.dataset.bound = '1';
-    item.addEventListener('click', () => {
-      item.classList.toggle('active');
-    });
-  });
-};
+(() => {
+  if (window.__faqDelegationBound) return;
+  window.__faqDelegationBound = true;
 
-// Run on initial load
-if (document.readyState !== 'loading') bindFaq();
-else window.addEventListener('DOMContentLoaded', bindFaq);
+  const onClick = (e) => {
+    const item = e.target.closest('.cs-faq-item');
+    if (!item) return;
+    if (e.target.closest('a,button')) return; // don't break links/buttons
+    item.classList.toggle('active');
+  };
 
-// Re-run
-window.addEventListener('astro:page-load', bindFaq);
-window.addEventListener('astro:after-swap', bindFaq);
-
+  document.addEventListener('click', onClick, false);
+})();
