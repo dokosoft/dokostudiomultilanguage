@@ -11,7 +11,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
 ---
 
 <BaseLayout
-  title={t("industries:hospitality-tourism.landing")}
+  title={t("industries:real-estate.landing")}
   description="Boost your rankings with expert SEO. We improve visibility, traffic, and conversions through keyword strategy, optimization, and link building."
   preloadedImage = {optimizedImage}
 >
@@ -20,9 +20,9 @@ const optimizedImage = await getOptimizedImage(landingImage)
   <!-- ============================================ -->
 
   <Landing 
-    title={t("industries:hospitality-tourism.landing")} 
+    title={t("industries:real-estate.landing")} 
     image={optimizedImage}
-    url="/hospitality-tourism"
+    url="industries/real-estate"
   />
 
   <!-- ============================================ -->
@@ -34,37 +34,37 @@ const optimizedImage = await getOptimizedImage(landingImage)
         <div class="cs-image-group">
             <picture class="cs-background">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/hospitality.jpg">
+                <source media="(max-width: 600px)" srcset="/assets/images/realestate.jpg">
                 <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/hospitality.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/hospitality.jpg" alt="people" width="605868" height="690">
+                <source media="(min-width: 601px)" srcset="/assets/images/realestate.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/realestate.jpg" alt="people" width="605868" height="690">
             </picture>
         </div>
         <div class="cs-content">
-            <span class="cs-topper">{t("industries:hospitality-tourism.topper")}</span>
-            <h2 class="cs-title">{t("industries:hospitality-tourism.landing")} </h2>
+            <span class="cs-topper">{t("industries:real-estate.topper")}</span>
+            <h2 class="cs-title">{t("industries:real-estate.landing")} </h2>
             <p class="cs-text">
-                {t("industries:hospitality-tourism.p")}
+                {t("industries:real-estate.p")}
             </p>
             <ul class="cs-ul">
                 <li class="cs-li">
                     <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/black-check.svg" alt="checkmark" width="24" height="24">
-                    {t("industries:hospitality-tourism.l1")}
+                    {t("industries:real-estate.l1")}
                 </li>
                 <li class="cs-li">
                     <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/black-check.svg" alt="checkmark" width="24" height="24">
-                    {t("industries:hospitality-tourism.l2")}
+                    {t("industries:real-estate.l2")}
                 </li>
                 <li class="cs-li">
                     <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/black-check.svg" alt="checkmark" width="24" height="24">
-                    {t("industries:hospitality-tourism.l3")}
+                    {t("industries:real-estate.l3")}
                 </li>
                 <li class="cs-li">
                     <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/black-check.svg" alt="checkmark" width="24" height="24">
-                    {t("industries:hospitality-tourism.l4")}
+                    {t("industries:real-estate.l4")}
                 </li>
             </ul>
-            <a href={getLocalePath("/contact")} class="cs-button-solid">{t("industries:hospitality-tourism.cta")}</a>
+            <a href={getLocalePath("/contact")} class="cs-button-solid">{t("industries:real-estate.cta")}</a>
         </div>
     </div>
     <div class="cs-bubbles" aria-hidden="true"></div>
@@ -77,8 +77,8 @@ const optimizedImage = await getOptimizedImage(landingImage)
 <section id="faq-1741">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">{t("industries:hospitality-tourism.faq.topper")}</span>
-            <h2 class="cs-title">{t("industries:hospitality-tourism.faq.title")}</h2>
+            <span class="cs-topper">{t("industries:real-estate.faq.topper")}</span>
+            <h2 class="cs-title">{t("industries:real-estate.faq.title")}</h2>
             <a href={getLocalePath("/contact")} class="cs-button-solid">
                 Ask Another Question
             </a>
@@ -88,51 +88,51 @@ const optimizedImage = await getOptimizedImage(landingImage)
                 <li class="cs-faq-item active">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            {t("industries:hospitality-tourism.faq.q1.q")}
+                            {t("industries:real-estate.faq.q1.q")}
                         </span>
                     </button>
                     <p class="cs-item-text">
-                        {t("industries:hospitality-tourism.faq.q1.a")}
+                        {t("industries:real-estate.faq.q1.a")}
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            {t("industries:hospitality-tourism.faq.q2.q")}
+                            {t("industries:real-estate.faq.q2.q")}
                         </span>
                     </button>
                     <p class="cs-item-text">
-                        {t("industries:hospitality-tourism.faq.q2.a")}
+                        {t("industries:real-estate.faq.q2.a")}
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            {t("industries:hospitality-tourism.faq.q3.q")}
+                            {t("industries:real-estate.faq.q3.q")}
                         </span>
                     </button>
                     <p class="cs-item-text">
-                        {t("industries:hospitality-tourism.faq.q3.a")}
+                        {t("industries:real-estate.faq.q3.a")}
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            {t("industries:hospitality-tourism.faq.q4.q")}
+                            {t("industries:real-estate.faq.q4.q")}
                         </span>
                     </button>
                     <p class="cs-item-text">
-                        {t("industries:hospitality-tourism.faq.q4.a")}
+                        {t("industries:real-estate.faq.q4.a")}
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            {t("industries:hospitality-tourism.faq.q5.q")}
+                            {t("industries:real-estate.faq.q5.q")}
                         </span>
                     </button>
                     <p class="cs-item-text">
-                        {t("industries:hospitality-tourism.faq.q5.a")}
+                        {t("industries:real-estate.faq.q5.a")}
                     </p>
                 </li>
             </ul>

@@ -113,3 +113,48 @@ const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
         }
         item.addEventListener('click', onClick)
         }
+
+//transparent header
+(() => {
+  let observer = null;
+
+  function setInitialState(homepage, hero, threshold = 0.1) {
+    const r = hero.getBoundingClientRect();
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+    const visible = Math.max(0, Math.min(r.bottom, vh) - Math.max(r.top, 0));
+    const ratio = r.height ? (visible / r.height) : 0;
+    if (ratio >= threshold) homepage.classList.add('in-hero');
+    else homepage.classList.remove('in-hero');
+  }
+
+  function initTransparentHeader() {
+    // cleanup any previous observer (important on client-side swaps)
+    if (observer) { observer.disconnect(); observer = null; }
+
+    const homepage = document.querySelector('.homepage');
+    const hero = document.getElementById('hero');
+    if (!homepage || !hero) return;
+
+    // set initial state to avoid a flash before the first IO callback
+    setInitialState(homepage, hero, 0.1);
+
+    observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) homepage.classList.add('in-hero');
+        else homepage.classList.remove('in-hero');
+      });
+    }, { threshold: 0.1 });
+
+    observer.observe(hero);
+  }
+
+  // Run on first load
+  document.addEventListener('DOMContentLoaded', initTransparentHeader);
+
+  // Run when page is restored from bfcache (back/forward)
+  window.addEventListener('pageshow', initTransparentHeader);
+
+  // Run on Astro View Transitions (client-side navigation)
+  document.addEventListener('astro:page-load', initTransparentHeader);
+  document.addEventListener('astro:after-swap', initTransparentHeader);
+})();

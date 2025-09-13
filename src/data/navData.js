@@ -11,6 +11,7 @@ const navData = [
   },
   {
     key: "Services",
+    url: "/services",
     children: [
       {
         key: "Static Websites Business",

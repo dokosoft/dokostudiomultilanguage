@@ -11,7 +11,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
 ---
 
 <BaseLayout
-  title={t("industries:professional-services.landing")}
+  title={t("industries:healthcare-wellness.landing")}
   description="Boost your rankings with expert SEO. We improve visibility, traffic, and conversions through keyword strategy, optimization, and link building."
   preloadedImage = {optimizedImage}
 >
@@ -20,9 +20,9 @@ const optimizedImage = await getOptimizedImage(landingImage)
   <!-- ============================================ -->
 
   <Landing 
-    title={t("industries:professional-services.landing")} 
+    title={t("industries:healthcare-wellness.landing")} 
     image={optimizedImage}
-    url="/professional-services"
+    url="industries/healthcare-wellness"
   />
 
   <!-- ============================================ -->
@@ -34,37 +34,37 @@ const optimizedImage = await getOptimizedImage(landingImage)
         <div class="cs-image-group">
             <picture class="cs-background">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/professionalservices.jpg">
+                <source media="(max-width: 600px)" srcset="/assets/images/gym-service-3.jpg">
                 <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/professionalservices.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/professionalservices.jpg" alt="people" width="605868" height="690">
+                <source media="(min-width: 601px)" srcset="/assets/images/gym-service-3.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/gym-service-3.jpg" alt="people" width="605868" height="690">
             </picture>
         </div>
         <div class="cs-content">
-            <span class="cs-topper">{t("industries:professional-services.topper")}</span>
-            <h2 class="cs-title">{t("industries:professional-services.landing")} </h2>
+            <span class="cs-topper">{t("industries:healthcare-wellness.topper")}</span>
+            <h2 class="cs-title">{t("industries:healthcare-wellness.landing")} </h2>
             <p class="cs-text">
-                {t("industries:professional-services.p")}
+                {t("industries:healthcare-wellness.p")}
             </p>
             <ul class="cs-ul">
                 <li class="cs-li">
                     <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/black-check.svg" alt="checkmark" width="24" height="24">
-                    {t("industries:professional-services.l1")}
+                    {t("industries:healthcare-wellness.l1")}
                 </li>
                 <li class="cs-li">
                     <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/black-check.svg" alt="checkmark" width="24" height="24">
-                    {t("industries:professional-services.l2")}
+                    {t("industries:healthcare-wellness.l2")}
                 </li>
                 <li class="cs-li">
                     <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/black-check.svg" alt="checkmark" width="24" height="24">
-                    {t("industries:professional-services.l3")}
+                    {t("industries:healthcare-wellness.l3")}
                 </li>
                 <li class="cs-li">
                     <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/black-check.svg" alt="checkmark" width="24" height="24">
-                    {t("industries:professional-services.l4")}
+                    {t("industries:healthcare-wellness.l4")}
                 </li>
             </ul>
-            <a href={getLocalePath("/contact")} class="cs-button-solid">{t("industries:professional-services.cta")}</a>
+            <a href={getLocalePath("/contact")} class="cs-button-solid">{t("industries:healthcare-wellness.cta")}</a>
         </div>
     </div>
     <div class="cs-bubbles" aria-hidden="true"></div>
@@ -77,8 +77,8 @@ const optimizedImage = await getOptimizedImage(landingImage)
 <section id="faq-1741">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">{t("industries:professional-services.faq.topper")}</span>
-            <h2 class="cs-title">{t("industries:professional-services.faq.title")}</h2>
+            <span class="cs-topper">{t("industries:healthcare-wellness.faq.topper")}</span>
+            <h2 class="cs-title">{t("industries:healthcare-wellness.faq.title")}</h2>
             <a href={getLocalePath("/contact")} class="cs-button-solid">
                 Ask Another Question
             </a>
@@ -88,51 +88,51 @@ const optimizedImage = await getOptimizedImage(landingImage)
                 <li class="cs-faq-item active">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            {t("industries:professional-services.faq.q1.q")}
+                            {t("industries:healthcare-wellness.faq.q1.q")}
                         </span>
                     </button>
                     <p class="cs-item-text">
-                        {t("industries:professional-services.faq.q1.a")}
+                        {t("industries:healthcare-wellness.faq.q1.a")}
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            {t("industries:professional-services.faq.q2.q")}
+                            {t("industries:healthcare-wellness.faq.q2.q")}
                         </span>
                     </button>
                     <p class="cs-item-text">
-                        {t("industries:professional-services.faq.q2.a")}
+                        {t("industries:healthcare-wellness.faq.q2.a")}
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            {t("industries:professional-services.faq.q3.q")}
+                            {t("industries:healthcare-wellness.faq.q3.q")}
                         </span>
                     </button>
                     <p class="cs-item-text">
-                        {t("industries:professional-services.faq.q3.a")}
+                        {t("industries:healthcare-wellness.faq.q3.a")}
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            {t("industries:professional-services.faq.q4.q")}
+                            {t("industries:healthcare-wellness.faq.q4.q")}
                         </span>
                     </button>
                     <p class="cs-item-text">
-                        {t("industries:professional-services.faq.q4.a")}
+                        {t("industries:healthcare-wellness.faq.q4.a")}
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            {t("industries:professional-services.faq.q5.q")}
+                            {t("industries:healthcare-wellness.faq.q5.q")}
                         </span>
                     </button>
                     <p class="cs-item-text">
-                        {t("industries:professional-services.faq.q5.a")}
+                        {t("industries:healthcare-wellness.faq.q5.a")}
                     </p>
                 </li>
             </ul>

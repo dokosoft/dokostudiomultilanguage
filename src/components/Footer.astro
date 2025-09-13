@@ -308,26 +308,3 @@ const currentYear = getCurrentYear();
     }
 }
 </style>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const homepage = document.querySelector(".homepage");
-  const hero = document.getElementById("hero");
-
-  if (homepage && hero) {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            homepage.classList.add("in-hero");
-          } else {
-            homepage.classList.remove("in-hero");
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    observer.observe(hero);
-  }
-});
-</script>

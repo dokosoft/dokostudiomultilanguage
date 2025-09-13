@@ -26,6 +26,11 @@ export default defineConfig({
           al: "/kontakti",
           gr: "/epikoinonia",
         },
+        "/services": {
+          de: "/dienstleistungen",
+          al: "/sherbimet",
+          gr: "/ypiresies",
+        },
         "/services/seo": {
           de: "/dienstleistungen/seo",
           al: "/sherbimet/seo",

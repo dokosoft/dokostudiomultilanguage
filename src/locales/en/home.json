@@ -30,8 +30,8 @@
         "p":"Our team is here whenever you need us, offering guidance and support long after your project is complete."
       }
     ],
-    "services":{
-      "topper":"Our Services",
+    "industries":{
+      "topper":"Our Industries",
       "title":"Industries We Work With",
       "p":"At Doko Studio, we deliver tailored digital solutions that match the unique needs of every business. We’ve worked across diverse industries. Our goal is to help your brand stand out and thrive in today’s digital world.",
       "s1":"Real Estate",
@@ -39,6 +39,15 @@
       "s3":"Healthcare & Wellness",
       "s4":"E-commerce & Retail",
       "s5":"Professional Services"
+    },
+    "services":{
+      "topper":"Our Services",
+      "title":"Services We Offer",
+      "p":"At Doko Studio, we deliver tailored digital solutions that match the unique needs of every business. We’ve worked across diverse industries. Our goal is to help your brand stand out and thrive in today’s digital world.",
+      "s1":"Static Websites Business",
+      "s2":"SEO",
+      "s3":"Google Business Page Management",
+      "s4":"Branding"
     },
     "reviews":{
       "topper":"Our Reviews",
