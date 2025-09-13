@@ -435,7 +435,7 @@ import Settings from "./TemplateComponents/Settings.astro";
         }
 
         .cs-li-link {
-          color: var(--bodyTextColorWhite);
+          color: var(--bodyTextColor);
         }
       }
     }
@@ -449,7 +449,7 @@ import Settings from "./TemplateComponents/Settings.astro";
   @media only screen and (max-width: 63.9375rem) {
     #cs-navigation {
       .cs-dropdown {
-        color: var(--bodyTextColorWhite);
+        color: var(--bodyTextColor);
         color: var(--headerColor);
 
         position: relative;
@@ -579,7 +579,7 @@ import Settings from "./TemplateComponents/Settings.astro";
         min-width: (200/16rem);
         margin: 0;
         padding: 0;
-        background-color: #fff;
+        background-color: var(--dark);
         box-shadow: rgba(149, 157, 165, 0.2) 0px 10px 16px;
         opacity: 0;
         border-bottom: 5px solid var(--primary);
@@ -604,7 +604,7 @@ import Settings from "./TemplateComponents/Settings.astro";
         list-style: none;
         width: 100%;
         height: auto;
-        color: var(--bodyTextColor);
+        color: var(--bodyTextColorWhite);
         opacity: 0;
         display: block;
         transform: translateY(-10/16rem);
@@ -663,14 +663,15 @@ import Settings from "./TemplateComponents/Settings.astro";
           /* prevents padding from affecting height and width */
           box-sizing: border-box;
           padding: (12/16rem);
-          color: var(--bodyTextColor);
+          color: var(--bodyTextColorWhite);
           display: block;
           transition:
             color 0.3s,
             background-color 0.3s;
 
           &:hover {
-            background-color: #f7f7f7;
+            background-color: var(--primary);
+            color: var(--bodyTextColorWhite);
           }
 
           &:focus-within {
@@ -694,11 +695,15 @@ import Settings from "./TemplateComponents/Settings.astro";
 
   /* Dark Mode */
   @media only screen and (min-width: 0rem) {
+    :global(.in-hero select, .in-hero .cs-li-link, .in-hero .icon) {
+      color: var(--bodyTextColorWhite) !important;
+    }
+    
     .in-hero{
         background-color: transparent !important;
         box-shadow: none !important;
     }
-    
+
     body.dark-mode {
       #cs-navigation {
         .cs-drop-ul {
@@ -708,7 +713,7 @@ import Settings from "./TemplateComponents/Settings.astro";
         .cs-li-link {
           &.cs-drop-link {
             &:hover {
-              background-color: var(--medium);
+              //background-color: var(--medium);
             }
           }
         }

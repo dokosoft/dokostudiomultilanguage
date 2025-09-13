@@ -84,7 +84,7 @@ const { width, label, icon, value, options } = Astro.props
 		top: 50%;
 		transform: translateY(-50%);
 		pointer-events: none;
-		color: inherit;
+		color: var(--bodyTextColor);
 		width: (15/16rem);
 	}
 
@@ -107,14 +107,14 @@ const { width, label, icon, value, options } = Astro.props
 			calc(var(--caret-size) + 0.25rem);
 		background-color: transparent;
 		text-overflow: ellipsis;
-		color: inherit;
+		color: var(--bodyTextColor);
 		cursor: pointer;
 		appearance: none;
 	}
 
 	option {
-		background-color: var(--light);
-		color: var(--grey);
+		background-color: var(--dark);
+		color: var(--bodyTextColorWhite);
 	}
 
 	@media only screen and (min-width: 64rem) {
@@ -133,9 +133,13 @@ const { width, label, icon, value, options } = Astro.props
 		}
 
 		option {
-			background-color: var(--grey);
+			background-color: var(--dark);
 			color: var(--light);
 			padding: 1rem;
+		}
+
+		select, .icon {
+			color: var(--bodyTextColorWhite);
 		}
 	}
 </style>

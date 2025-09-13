@@ -39,7 +39,7 @@ const currentYear = getCurrentYear();
             {
               navData.map((entry: any) => (
                 <li class="cs-nav-li">
-                  {entry.url && (<a href={getLocalePath(entry.url)}>{t(entry.key)}</a>)}
+                  {entry.url && (<a href={getLocalePath(entry.url)} class="cs-nav-link">{t(entry.key)}</a>)}
                 </li>
               ))
             }
@@ -49,16 +49,16 @@ const currentYear = getCurrentYear();
                 <span class="cs-header">{t("footer.services")}</span>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href={getLocalePath("/static-websites-business/")}>Static Websites for Business</a>
+                <a class="cs-nav-link" href={getLocalePath("services/static-websites-business/")}>Static Websites for Business</a>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href={getLocalePath("/seo/")}>SEO</a>
+                <a class="cs-nav-link" href={getLocalePath("services/seo/")}>SEO</a>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href={getLocalePath("/google-business-pages-management/")}>Google Business Pages Management</a>
+                <a class="cs-nav-link" href={getLocalePath("services/google-business-pages-management/")}>Google Business Pages Management</a>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href={getLocalePath("/branding/")}>Branding</a>
+                <a class="cs-nav-link" href={getLocalePath("services/branding/")}>Branding</a>
             </li>
         </ul>
         <!-- Contact Info -->
@@ -159,7 +159,6 @@ const currentYear = getCurrentYear();
         .cs-logo-img {
             width: 100%;
             height: auto;
-            filter: brightness(1000);
 
             &.dark {
                 display: none;
@@ -181,6 +180,9 @@ const currentYear = getCurrentYear();
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
+            a{
+                text-decoration: none;
+            }
         }
 
         .cs-header {
@@ -189,7 +191,7 @@ const currentYear = getCurrentYear();
             text-transform: uppercase;
             font-weight: 700;
             margin-bottom: calc(12 / 16 * 1rem);
-            color: var(--bodyTextColorWhite);
+            color: var(--primary);
             position: relative;
             display: block;
         }

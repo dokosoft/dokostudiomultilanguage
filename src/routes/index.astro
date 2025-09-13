@@ -92,9 +92,64 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage)
     </div>
 </section>
 
+<!-- ============================================ -->
+<!--                   Steps                      -->
+<!-- ============================================ -->
+
+<section id="steps-1171">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Our Work Process</span>
+      <h2 class="cs-title">How We Build Your Digital Success</h2>
+      <p class="cs-text">
+        From the first idea to the final launch, we make sure every step is clear, collaborative, and tailored to your goals. Here’s how we work with you to turn vision into results.
+      </p>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img class="cs-icon" src="assets/svgs/lightbulb.svg" alt="icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+        </picture>
+        <h3 class="cs-h3">Discover & Strategy</h3>
+        <p class="cs-item-p">
+          We start by understanding your business, audience, and objectives. Together, we define a strategy that sets the foundation for measurable growth.
+        </p>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img class="cs-icon" src="assets/svgs/puzzle.svg" alt="icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+        </picture>
+        <h3 class="cs-h3">Creative Design</h3>
+        <p class="cs-item-p">
+          Our team designs sleek, engaging, and user-focused visuals that reflect your brand and capture attention across web and digital platforms.
+        </p>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img class="cs-icon" src="assets/svgs/gear.svg" alt="icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+        </picture>
+        <h3 class="cs-h3">Build & Optimize</h3>
+        <p class="cs-item-p">
+          We develop fast, secure, and scalable digital solutions. Every detail is optimized for performance, SEO, and a seamless user experience.
+        </p>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img class="cs-icon" src="assets/svgs/launch.svg" alt="icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+        </picture>
+        <h3 class="cs-h3">Launch & Grow</h3>
+        <p class="cs-item-p">
+          Once live, we track results and support you with ongoing campaigns, updates, and improvements to ensure your digital presence keeps growing.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+                                
 
 <!-- ============================================ -->
-<!--                    Services                  -->
+<!--                    Industries                  -->
 <!-- ============================================ -->
 
 <section id="services-1724">
@@ -190,49 +245,47 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage)
 </section>
 
 <!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
 
-    <section id="reviews-67">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">{t("home:reviews.topper")}</span>
-                <h2 class="cs-title">{t("home:reviews.title")}</h2>
-                <p class="cs-text">
-                    {t("home:reviews.p")}
-                </p>
-            </div>
-
-            <ul class="cs-card-group">
-                <!-- Review 1 -->
-                <li class="cs-item">
-                    <p class="cs-item-text">
-                   "{t("home:reviews.reviews.0.review")}"
-                </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">{t("home:reviews.reviews.0.name")}</span>
-                            <span class="cs-desc">{t("home:reviews.reviews.0.rank")}</span>
-                        </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
-                    </div>
-                </li>
-                <!-- Review 2 -->
-                <li class="cs-item">
-                    <p class="cs-item-text">
-                    "{t("home:reviews.reviews.1.review")}"
-                </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">{t("home:reviews.reviews.1.name")}</span>
-                            <span class="cs-desc">{t("home:reviews.reviews.1.rank")}</span>
-                        </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
-                    </div>
-                </li>
-            </ul>
+<section id="reviews-355">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">{t("home:reviews.topper")}</span>
+            <h2 class="cs-title">{t("home:reviews.title")}</h2>
+            <p class="cs-text">
+                {t("home:reviews.p")}
+            </p>
         </div>
-    </section>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
+                <p class="cs-review">
+                    {t("home:reviews.reviews.0.review")}
+                </p>
+                <span class="cs-name">{t("home:reviews.reviews.0.name")}</span>
+                <span class="cs-job">{t("home:reviews.reviews.0.rank")}</span>
+            </li>
+            <li class="cs-item">
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
+                <p class="cs-review">
+                    {t("home:reviews.reviews.1.review")}
+                </p>
+                <span class="cs-name">{t("home:reviews.reviews.1.name")}</span>
+                <span class="cs-job">{t("home:reviews.reviews.1.rank")}</span>
+            </li>
+            <li class="cs-item">
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
+                <p class="cs-review">
+                    {t("home:reviews.reviews.2.review")}
+                </p>
+                <span class="cs-name">{t("home:reviews.reviews.2.name")}</span>
+                <span class="cs-job">{t("home:reviews.reviews.2.rank")}</span>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
 
   <CTA />
 </BaseLayout>
@@ -706,10 +759,11 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage)
             border-radius: calc(16 / 16 * 1rem);
             /* prevents padding from adding to height and width */
             box-sizing: border-box;
-            transition: background-color 0.3s;
+            //transition: background-color 0.3s;
             &:hover {
                 background-color: var(--primary);
                 cursor: pointer;
+                box-shadow: #067bc099 0px -10px 58px, #067bc08c 0px 1px 14px;
 
                 .cs-icon {
                     filter: grayscale(1) brightness(1000%);
@@ -824,10 +878,235 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage)
 }
 
 
-  /* PAGE-SPECIFIC STYLES FOR THE HOME PAGE */
-
 /*-- -------------------------- -->
-<---          Services          -->
+<---           Steps            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #steps-1171 {
+        padding: var(--sectionPadding);
+        background-color: #1a1a1a;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            /* changes to 1280px at desktop */
+            max-width: (704/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+        }
+
+        .cs-text {
+            font-size: var(--bodyFontSize);
+            line-height: 1.5em;
+            text-align: inherit;
+            width: 100%;
+            max-width: (650/16rem);
+            margin: 0;
+            color: var(--bodyTextColor);
+        }
+
+        .cs-topper {
+            color: var(--primary);
+        }
+
+        .cs-title,
+        .cs-text {
+            color: var(--bodyTextColorWhite);
+        }
+
+        .cs-text {
+            opacity: 0.8;
+        }
+
+        .cs-card-group {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: (20/16rem);
+        }
+
+        .cs-item {
+            text-align: center;
+            list-style: none;
+            display: flex;
+            grid-column: span 12;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+
+            &:last-of-type {
+                &:after {
+                    display: none;
+                }
+            }
+
+            &:nth-of-type(even) {
+                &:after {
+                    /* scaleX -1 flips it horizontally */
+                    transform: rotate(-135deg) scaleX(-1);
+                }
+            }
+
+            &:after {
+                content: "";
+                position: relative;
+                display: block;
+                /* 54px - 84px */
+                width: clamp(3.375rem, 6vw, 5.25rem);
+                height: clamp(3.375rem, 6vw, 5.25rem);
+                margin-top: (20/16rem);
+                background: url("assets/svgs/curved-arrow.svg");
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                opacity: 1;
+                transform: rotate(135deg);
+            }
+            &:hover .cs-picture{
+                box-shadow: #067bc099 0px -10px 58px, #067bc08c 0px 1px 14px;
+            }
+        }
+
+        .cs-picture {
+            margin-bottom: (24/16rem);
+            width: (88/16rem);
+            height: (88/16rem);
+            border: 1px solid rgb(6 123 192 / 50%);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .cs-icon {
+            width: (40/16rem);
+            height: auto;
+            display: block;
+        }
+
+        .cs-h3 {
+            font-size: (20/16rem);
+            line-height: 1.2em;
+            text-align: inherit;
+            margin: 0 0 (12/16rem) 0;
+            color: var(--bodyTextColorWhite);
+        }
+
+        .cs-item-p {
+            font-size: (16/16rem);
+            line-height: 1.5em;
+            text-align: inherit;
+            max-width: (342/16rem);
+            margin: 0;
+            color: var(--bodyTextColorWhite);
+            opacity: 0.8;
+        }
+
+        .cs-graphic {
+            width: (840/16rem);
+            height: auto;
+            opacity: 0.05;
+            position: absolute;
+            top: (-80/16rem);
+            left: (-80/16rem);
+            transform: rotate(-10deg);
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #steps-1171 {
+        .cs-item {
+            grid-column: span 6;
+
+            &:nth-of-type(2) {
+                &:after {
+                    display: none;
+                }
+            }
+
+            &:nth-of-type(1) {
+                &:after {
+                    transform: rotate(135deg) scaleX(-1);
+                }
+            }
+
+            &:after {
+                margin: 0;
+                position: absolute;
+                right: (-40/16rem);
+                top: 0;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #steps-1171 {
+        .cs-container {
+            max-width: (1280/16rem);
+        }
+
+        .cs-item {
+            grid-column: span 3;
+
+            &:nth-of-type(2) {
+                &:after {
+                    display: block;
+                    transform: rotate(45deg);
+                }
+            }
+
+            &:nth-of-type(3) {
+                &:after {
+                    display: block;
+                    transform: rotate(135deg) scaleX(-1);
+                }
+            }
+
+            &:after {
+                right: (-48/16rem);
+            }
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #steps-1171 {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+                                
+                                
+/*-- -------------------------- -->
+<---          Industries          -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
@@ -1110,12 +1389,12 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage)
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #reviews-67 {
+    #reviews-355 {
         padding: var(--sectionPadding);
 
         .cs-container {
             width: 100%;
-            max-width: calc(1280 / 16 * 1rem);
+            max-width: (1440/16rem);
             margin: auto;
             display: flex;
             flex-direction: column;
@@ -1138,138 +1417,84 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage)
             padding: 0;
             margin: 0;
             display: flex;
+            justify-content: center;
+            align-items: center;
             flex-direction: column;
-            column-gap: calc(20 / 16 * 1rem);
-            row-gap: calc(64 / 16 * 1rem);
+            /* 16px - 20px */
+            gap: clamp(1rem, 2.5vw, 1.15rem);
         }
 
         .cs-item {
-            text-align: left;
             list-style: none;
             width: 100%;
-            max-width: calc(630 / 16 * 1rem);
-            /* pushes up the same amount the cs-item-img overlaps the card */
-            margin: calc(40 / 16 * 1rem) 0 0 0;
-            /* Padding L & R - 16px - 32px */
-            padding: calc(60 / 16 * 1rem) clamp(1rem, 3.2vw, 2rem) 0;
-            /* 32px - 40px */
-            padding-bottom: clamp(2rem, 5.4vw, 2.5rem);
-            box-shadow: 0px 20px 39px 0px rgba(0, 0, 0, 0.05);
-            border-radius: calc(8 / 16 * 1rem);
-            background: #fff;
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            align-items: center;
-            /* Prevents padding from affecting height & width */
-            box-sizing: border-box;
-
-            &:last-of-type {
-                margin-bottom: 0;
-            }
-        }
-
-        .cs-item-img {
-            width: calc(80 / 16 * 1rem);
-            height: calc(80 / 16 * 1rem);
-            position: absolute;
-            top: calc(-40 / 16 * 1rem);
-        }
-
-        .cs-item-text {
-            font-size: calc(16 / 16 * 1rem);
-            line-height: 1.5em;
-            margin: 0 0 calc(20 / 16 * 1rem);
-            padding-bottom: calc(20 / 16 * 1rem);
-            color: var(--bodyTextColor);
-            border-bottom: 1px solid #e8e9ec;
-        }
-
-        .cs-info {
-            width: 100%;
-            /* margin-top auto pushes up against the rest of the card, that way when one card has more text than the other, the reviewer info is always pushed to the bottom and lined up with the rest of them.  This ensures better responsiveness for changing content */
-            margin: auto 0 0 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .cs-flex-group {
-            width: 100%;
+            max-width: (630/16rem);
             margin: 0;
+            /* 24px - 32px top & bottom */
+            /* 16px - 40px left & right */
+            padding: clamp(1.5rem, 3.15vw, 2rem) clamp(1rem, 3.15vw, 2.5rem);
+            background-color: #f7f7f7;
+            border-radius: (16/16rem);
+            /* prevents padding from adding to height and width */
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .cs-quote {
+            width: (40/16rem);
+            height: auto;
+            margin-bottom: (32/16rem);
+            display: block;
+        }
+
+        .cs-review {
+            /* 14px - 20px */
+            font-size: clamp(0.875rem, 2vw, 1.25rem);
+            line-height: 1.5em;
+            margin: 0;
+            /* 20px - 40px */
+            margin-bottom: clamp(1.25rem, 3vw, 2.5rem);
+            color: var(--bodyTextColor);
         }
 
         .cs-name {
-            font-size: calc(16 / 16 * 1rem);
-            line-height: 1.5em;
+            /* 20px - 25px */
+            font-size: clamp(1.25rem, 3vw, 1.5625rem);
+            line-height: 1.2em;
             font-weight: 700;
-            width: 40%;
             margin: 0;
-            display: block;
+            /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
+            margin-top: auto;
             color: var(--headerColor);
-        }
-
-        .cs-desc {
-            font-size: calc(14 / 16 * 1rem);
-            font-weight: 400;
-            color: #7d799c;
             display: block;
         }
 
-        .cs-item-stars {
-            width: calc(96 / 16 * 1rem);
-            height: calc(16 / 16 * 1rem);
-        }
-
-        .cs-button-solid {
-            font-size: calc(16 / 16 * 1rem);
-            /* 46px - 56px */
-            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-            text-decoration: none;
-            font-weight: 700;
-            text-align: center;
+        .cs-job {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.6vw, 1rem);
+            line-height: 1.5em;
             margin: 0;
-            color: #fff;
-            min-width: calc(150 / 16 * 1rem);
-            padding: 0 calc(24 / 16 * 1rem);
-            background-color: var(--primary);
-            border-radius: calc(4 / 16 * 1rem);
-            display: inline-block;
-            position: relative;
-            z-index: 1;
-            /* prevents padding from adding to the width */
-            box-sizing: border-box;
-
-            &:before {
-                content: "";
-                position: absolute;
-                height: 100%;
-                width: 0%;
-                background: #000;
-                opacity: 1;
-                top: 0;
-                left: 0;
-                z-index: -1;
-                border-radius: calc(4 / 16 * 1rem);
-                transition: width 0.3s;
-            }
-
-            &:hover {
-                &:before {
-                    width: 100%;
-                }
-            }
+            color: var(--bodyTextColor);
+            display: block;
         }
     }
 }
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #reviews-67 {
+    #reviews-355 {
         .cs-card-group {
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
+
+        .cs-item {
+            width: clamp(31.5%, 30vw, 32.3%);
         }
     }
 }
@@ -1277,22 +1502,32 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage)
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #reviews-67 {
+        #reviews-355 {
+            .cs-topper {
+                color: var(--primaryLight);
+            }
+
             .cs-title,
-            .cs-text,
-            .cs-item-text,
-            .cs-name {
+            .cs-text {
                 color: var(--bodyTextColorWhite);
             }
 
             .cs-item {
-                background: rgba(0, 0, 0, 0.2);
+                background-color: var(--accent);
             }
 
-            .cs-desc {
-                color: var(--primaryLight);
+            .cs-review,
+            .cs-name {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-job {
+                color: var(--bodyTextColorWhite);
+                opacity: 0.7;
             }
         }
     }
 }
+
+                                
 </style>
