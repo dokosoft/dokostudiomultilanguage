@@ -31,11 +31,11 @@ const navData = [
       }
     ]
   },
-  {
-    key: "blog",
-    url: "/blog",
-    children: []
-  },
+  //{
+  //  key: "blog",
+  //  url: "/blog",
+  //children: []
+  //},
   {
     key: "contact",
     url: "/contact",

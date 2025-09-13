@@ -44,10 +44,14 @@
       "topper":"Our Services",
       "title":"Services We Offer",
       "p":"At Doko Studio, we deliver tailored digital solutions that match the unique needs of every business. We’ve worked across diverse industries. Our goal is to help your brand stand out and thrive in today’s digital world.",
-      "s1":"Static Websites Business",
-      "s2":"SEO",
-      "s3":"Google Business Page Management",
-      "s4":"Branding"
+      "s1": "Static Websites Business",
+      "p1": "Fast, secure, and responsive websites tailored to showcase your business and convert visitors into clients.",
+      "s2": "SEO",
+      "p2": "Optimize your site for search engines with keyword strategy, on-page improvements, and performance tracking.",
+      "s3": "Google Business Page Management",
+      "p3": "Keep your Google Business profile updated and engaging to attract local customers and improve visibility.",
+      "s4": "Branding",
+      "p4": "Build a strong brand identity with custom logos, colors, and messaging that connect with your audience."
     },
     "reviews":{
       "topper":"Our Reviews",

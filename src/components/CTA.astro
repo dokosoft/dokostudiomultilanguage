@@ -6,19 +6,25 @@ import mobileImage from "@assets/images/CTA/cta.jpg"
 import desktopImage from "@assets/images/CTA/cta.jpg"
 import fallbackImage from "@assets/images/CTA/cta.jpg"
 ---
-<section id="cta-51">
+
+<!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+
+<section id="cta-1071">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">{t("ctaComponent.topper")}</span>
-            <h2 class="cs-title">{t("ctaComponent.title")}</h2>
-            <p class="cs-text">
-                {t("ctaComponent.message")}
-            </p>
-            <a href={getLocalePath("/contact")} class="cs-button-solid">{t("ctaComponent.cta")}</a>
+            <div class="cs-flex">
+                <span class="cs-topper">{t("ctaComponent.topper")}</span>
+                <h2 class="cs-title">{t("ctaComponent.title")}</h2>
+            </div>
+            <div class="cs-button-box">
+                <a href={getLocalePath("/services")} class="cs-button-solid">{t("ctaComponent.servicesCta")}</a>
+                <a href={getLocalePath("/contact")} class="cs-button-transparent">{t("ctaComponent.cta")}</a>
+            </div>
         </div>
     </div>
-    <!-- Background Image-->
-     <CSPicture
+    <CSPicture
       mobileImgUrl={mobileImage}
       mobileMediaWidth="600px"
       desktopImgUrl={desktopImage}
@@ -27,6 +33,7 @@ import fallbackImage from "@assets/images/CTA/cta.jpg"
       alt={t("ctaComponent.alt")}
     />
 </section>
+                                
 
 <!-- Don't forget to place the picture styles over into the CSPicture component -->
 <style lang="less">
@@ -36,13 +43,15 @@ import fallbackImage from "@assets/images/CTA/cta.jpg"
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #cta-51 {
-        padding: var(--sectionPadding);
+    #cta-1071 {
+        padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+        background-color: var(--primary);
         position: relative;
+        z-index: 1;
 
         .cs-container {
             width: 100%;
-            max-width: calc(1280 / 16 * 1rem);
+            max-width: (1280/16rem);
             margin: auto;
             display: flex;
             flex-direction: column;
@@ -59,40 +68,140 @@ import fallbackImage from "@assets/images/CTA/cta.jpg"
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
             align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-flex {
+            max-width: (630/16rem);
         }
 
         .cs-title {
+            margin: 0;
+
             color: var(--bodyTextColorWhite);
         }
 
-        .cs-text {
-            margin-bottom: calc(16 / 16 * 1rem);
-            color: var(--bodyTextColorWhite);
-            opacity: 0.8;
-            &:last-of-type {
-                margin-bottom: calc(32 / 16 * 1rem);
+        .cs-button-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: (16/16rem);
+        }
+
+        .cs-button-solid {
+            font-size: (16/16rem);
+            /* 46px - 56px */
+            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            color: #fff;
+            min-width: (150/16rem);
+            padding: 0 (24/16rem);
+            background-color: var(--primary);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 0%;
+                background: #000;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: width 0.3s;
+            }
+
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
             }
         }
 
-        .cs-picture {
-            height: 100%;
+        .cs-button-transparent {
+            font-size: (16/16rem);
+            /* 46px - 56px */
+            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            color: #fff;
+            min-width: (150/16rem);
+            padding: 0 (24/16rem);
+            background-color: transparent;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
+            transition: color 0.3s;
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 0%;
+                background: #fff;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: width 0.3s;
+            }
+
+            &:after {
+                /* border */
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: transparent;
+                /* prevents padding from adding to the width */
+                box-sizing: border-box;
+                border: 1px solid #fff;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: width 0.3s;
+                pointer-events: none;
+            }
+
+            &:hover {
+                color: var(--primary);
+                &:before {
+                    width: 100%;
+                }
+            }
+        }
+
+        .cs-background {
             width: 100%;
+            height: 100%;
             display: block;
             position: absolute;
-            z-index: -1;
             top: 0;
             left: 0;
             z-index: -1;
 
             &:before {
-                /* black color overlay */
+                /* background color overlay */
                 content: "";
                 position: absolute;
                 display: block;
                 height: 100%;
                 width: 100%;
-                background: #000;
-                opacity: 0.8;
+                background: #1a1a1a;
+                opacity: 0.88;
                 top: 0;
                 left: 0;
                 z-index: 1;
@@ -104,9 +213,29 @@ import fallbackImage from "@assets/images/CTA/cta.jpg"
                 left: 0;
                 height: 100%;
                 width: 100%;
+                /* Makes img tag act as a background image */
                 object-fit: cover;
             }
         }
     }
 }
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #cta-1071 {
+        .cs-content {
+            text-align: left;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .cs-button-box {
+            flex-wrap: nowrap;
+            align-items: center;
+            flex: none;
+        }
+    }
+}
+
+                                
 </style>
