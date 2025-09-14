@@ -1,5 +1,5 @@
 (() => {
-  if (window.__faqBound) return;            // avoid double-binding
+  if (window.__faqBound) return;
   window.__faqBound = true;
 
   document.addEventListener('click', (e) => {

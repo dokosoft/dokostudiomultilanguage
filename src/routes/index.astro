@@ -884,6 +884,7 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage)
             .cs-h3,
             .cs-item-text {
                 color: var(--bodyTextColorWhite);
+                
             }
 
             .cs-item {
@@ -891,9 +892,11 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage)
                 &:hover {
                     box-shadow: #067bc099 0px 0px 26px,#067bc08c 0px 0px 0px;
                     transition-duration: 0.1s;
+                    .cs-item-text, .cs-h3{
+                        color: var(--bodyTextColorWhite)!important;
+                    }
                 }
             }
-
             .cs-icon {
                 /* makes it so bright it turns white */
                 filter: brightness(1000%);
